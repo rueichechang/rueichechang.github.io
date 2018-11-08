@@ -1,48 +1,25 @@
 ///
-/// Story by HTML5 UP
+/// Phantom by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Wrapper */
 
-	@mixin wrapper-color($n) {
-		> .color#{$n} {
-			background-color: _palette(color#{$n});
-		}
-	}
-
 	#wrapper {
-		background-color: inherit;
-		width: 100%;
-		overflow-x: hidden;
+		> * {
+			> .inner {
+				$gutter: _size(gutter);
 
-		> .invert {
-			@include color(invert);
-		}
+				width: 100%;
+				max-width: _size(inner);
+				margin: 0 auto;
+				padding: 0 $gutter;
 
-		@include wrapper-color(1);
-		@include wrapper-color(2);
-		@include wrapper-color(3);
-		@include wrapper-color(4);
-		@include wrapper-color(5);
-		@include wrapper-color(6);
-		@include wrapper-color(7);
+				@include breakpoint('<=small') {
+					$gutter: _size(gutter) * 0.5;
 
-		&.divided {
-			> * {
-				box-shadow: inset 0 1px 0 0 _palette(border-alt);
-
-				&:first-child {
-					box-shadow: none !important;
-				}
-			}
-
-			> .invert {
-				box-shadow: inset 0 1px 0 0 _palette(invert, border-alt);
-
-				&:first-child {
-					box-shadow: none !important;
+					padding: 0 $gutter;
 				}
 			}
 		}
