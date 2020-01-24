@@ -210,6 +210,10 @@ a:hover{
 	cursor:pointer
 }
 
+#content .cv-section span.con:hover{
+	color:rgb(0, 0, 255);
+}
+
 .button {
 	background-color: #4CAF50; /* Green */
 	border: none;
