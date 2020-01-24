@@ -75,6 +75,7 @@ a:hover{
 	clear:both;
 	border-bottom:2px rgb(0, 0, 0) solid;
 	margin-bottom: 40px;
+	margin-top:20px
 }
 /* ------------ */
 /* -- Header -- */
@@ -183,6 +184,7 @@ a:hover{
 	font-size:14px;
 	color:rgb(0, 0, 90);
 	letter-spacing:0;
+	display:none
 }
 
 #content .cv-section-item{
@@ -200,6 +202,14 @@ a:hover{
 	color:rgb(0, 0, 0);
 	letter-spacing:0;
 }
+#content .cv-section span.con{
+	margin-top:-10px;
+	font-size:14px;
+	color:rgb(0, 0, 90);
+	letter-spacing:0;
+	cursor:pointer
+}
+
 .button {
 	background-color: #4CAF50; /* Green */
 	border: none;

@@ -18,8 +18,8 @@
   <div id="header">
     <div id="header-content">
       <div style="height: 50px">
-        <h1 style="float: left;font-size: 35px">Ruei-Che Chang 張睿哲</h1>
-        <h1 style="float: right;font-size: 25px;color:rgb(0,90,0)">CS Master at Dartmouth College</h1>
+        <h1 style="float: left;font-size: 35px">Ruei-Che Chang 張睿哲 |</h1>
+        <h1 style="float: right;font-size: 27px;color:rgb(0,90,0)">CS Master at Dartmouth College</h1>
       </div>
       <p style="color:rgb(0, 0, 0);font-size: 15px;">I am 1st-year research-track master student major in 
         <a href="https://web.cs.dartmouth.edu/" style="color:rgb(0, 0, 0); font-weight: bold;">Computer Science </a> at Dartmouth College, advised by  
@@ -38,7 +38,7 @@
         <p style = "text-align:center ">Curriculum vitae</p>
         </a>
       </div>
-      <div id="contact-details" style = "margin-left:150px">
+      <div id="contact-details" style = "margin-left:100px">
         <p class="contact"><span>Email: </span>james304088@gmail.com</p>
         <p class="contact"><span>Website: </span>rueichechang.github.io/</p>
         <p class="contact"><span>Phone: </span>(617) 794 9018</p>
@@ -55,11 +55,11 @@
   <!--end header-->
 
   <div id = "button">
-    <a href="#publication" class = "button">publication</a>
-    <a href="#manuscript" class = "button">manuscript</a>
-    <a href="#side" class = "button">side projects</a>
+    <a href="#publication" class = "button">Publication</a>
+    <a href="#manuscript" class = "button">Manuscript in Preparation</a>
+    <a href="#side" class = "button">Side projects</a>
   </div>
-  <div class="line_black"></div>
+  <div class="line_black" style = "margin-top:-6px"></div>
   <!-- <hr> -->
   <div id="content">
     <div id="publication" class="cv-section">
@@ -72,8 +72,8 @@
         <span class="project_link"><a href="pdf/shra.pdf">[Paper]</a></span> 
         <span class="project_link"><a href="#">[Video]</a></span> 
         <span class="project_link"><a href="#">[Talk]</a></span>
-        
-        <p class = "contribution">Contribution: Design experiment workflow using WoZ and User Enactment, and execute the experiment as experimenter. Analyze qualitative data with co-authors using Affinity Diagram and write some parts of paper.
+        <span class="con" onclick="shra_click()">[My Contribution]</span>
+        <p class = "contribution" id = "SHRA_con">Contribution: Design experiment workflow using WoZ and User Enactment, and execute the experiment as experimenter. Analyze qualitative data with co-authors using Affinity Diagram and write some parts of paper.
         </p>
       </div>
       <!--end cv-section-item-->
@@ -86,7 +86,9 @@
         <span class="project_link"><a href="pdf/glissade.pdf">[Paper]</a></span> 
         <span class="project_link"><a href="#">[Video]</a></span> 
         <span class="project_link"><a href="#">[Talk]</a></span>
-        <p class = "contribution">Contribution: Programming 6 applications (including games and daily usage of tablet) by Unity3D. Discussion about the modification after being rejected first time. 
+        <span class="con" onclick="glissade_click()">[My Contribution]</span>
+
+        <p class = "contribution" id = "glissade_con">Contribution: Programming 6 applications (including games and daily usage of tablet) by Unity3D. Discussion about the modification after being rejected. 
         </p>
       </div>
       <div class="line"></div>
@@ -98,7 +100,9 @@
         <span class="project_link"><a href="pdf/masque.pdf">[Paper]</a></span> 
         <span class="project_link"><a href="https://www.youtube.com/watch?v=4LMiQTOOJ7o">[Video]</a></span> 
         <span class="project_link"><a href="https://www.youtube.com/watch?v=AuoENjRW5F0">[Talk]</a></span>
-        <p class = "contribution">Contribution: Using Unity3D to create authoring interface (tablet version) for designer to create desired haptic feedback on Masque. 
+        <span class="con" onclick="masque_click()">[My Contribution]</span>
+
+        <p class = "contribution" id = "masque_con">Contribution: Using Unity3D to create authoring interface (tablet version) for designer to create desired haptic feedback on Masque. 
         </p>
       </div>
     </div>
@@ -110,7 +114,8 @@
         <h4 class="title">A Computer Vision Based Toolkit to Assist Novices in Learning Circuit/Breadboard Prototyping</h4>
         <h4 class= "conference">*authorship is pending, this paper is expected to be submitted to UIST'2020</h4>
         <h4 class="meta"> <b>Ruei-Che Chang*</b> , Te-Yen Wu*, Zheer Xu*, Xing-Dong Yang*</h4>
-        <p class = "contribution">Contribution: Project discussion and ideation. Building the entire system, including python server with computer vision algorithms for different tasks and android client to function and show the circuit visualization and tooltips overlayed on the screen. 
+        <span class="con" onclick="circuit_click()">[My Contribution]</span>
+        <p class = "contribution" id = "circuit_con">Contribution: Project discussion and ideation. Building the entire system, including python server with computer vision algorithms for different tasks and android client to function and show the circuit visualization and tooltips overlayed on the screen. 
         </p>
       </div>
       <!--end cv-section-item-->
@@ -121,7 +126,9 @@
         <h4 class= "conference"> First rejected by CHI'20 (average score 2.875) and will be submitted to other venue</h4>
         <h4 class="meta"> <b>Ruei-Che Chang*</b> , Chi-Huan Chiang*, Chih-Yun Yang, Shuo-wen Hsu, Da-Yuan Huang</h4>
         <span class="project_link"><a href="https://drive.google.com/file/d/1dp5Yp_HAMRFAJ-DQs6Qv_24lKNJNeQzy/view?usp=sharing">[Video]</a></span> 
-        <p class = "contribution">Contribution: Project discussion and ideation. All parts of programming of TanGo, including arduino and two applications. Writing whole paper.  
+        <span class="con" onclick="tango_click()">[My Contribution]</span>
+
+        <p class = "contribution" id = "tango_con">Contribution: Project discussion and ideation. All parts of programming of TanGo, including arduino and two applications. Writing whole paper.  
         </p>
       </div>
       
@@ -159,7 +166,23 @@
   </div>
 </div>
 
-
+<script>
+  function shra_click() {
+    document.getElementById("SHRA_con").style.display = "block";
+  }
+  function glissade_click() {
+    document.getElementById("glissade_con").style.display = "block";
+  }
+  function masque_click() {
+    document.getElementById("masque_con").style.display = "block";
+  }
+  function circuit_click() {
+    document.getElementById("circuit_con").style.display = "block";
+  }
+  function tango_click() {
+    document.getElementById("tango_con").style.display = "block";
+  }
+</script>
 <!--end wrap-->
 <div id="spacing"></div>
 <!--hack for ie6 and ie7-->
