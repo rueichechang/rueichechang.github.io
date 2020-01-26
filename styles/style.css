@@ -12,7 +12,7 @@ URL:http://www.chris-creed.com
 /* -- General Styles -- */
 /* -------------------- */
 #wrap{
-	width:750px;
+	width:800px;
 	margin:70px auto;
 	font-family:"Open Sans", Arial, sans-serif;
 	color:#555;
@@ -82,12 +82,12 @@ a:hover{
 /* ------------ */
 #header{
 	float:left;
-	width:750px;
+	width:800px;
 	margin:0 0 55px 0;
 }
 #header #header-content{
 	float:left;
-	width:750px;
+	width:800px;
 	margin-bottom: -50px;
 }
 #header #header-content h1{
@@ -134,7 +134,7 @@ a:hover{
 /* -- Content -- */
 /* ------------- */
 #content .cv-section{
-	width:750px;
+	width:800px;
 	margin:0 0 15px 0;
 }
 #content .cv-section h3{
@@ -193,7 +193,7 @@ a:hover{
 #content .cv-section img{
 	margin-left: 10px;
 	height: auto;
-	width: 180px;
+	width: 170px;
 }
 
 #content .cv-section span.project_link{
