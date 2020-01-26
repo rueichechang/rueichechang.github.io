@@ -20,8 +20,8 @@ URL:http://www.chris-creed.com
 	padding:70px 70px 20px 70px;
 	-webkit-box-shadow:0 0 50px #aaa;
 	-moz-box-shadow:0 0 30px #aaa;
-	box-shadow:0 0 50px #aaa;
-	background:#fff;
+	box-shadow:0 0 50px rgb(170, 170, 170);
+	background:rgb(255, 255, 255);
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
 }
