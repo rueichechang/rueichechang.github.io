@@ -12,7 +12,7 @@ URL:http://www.chris-creed.com
 /* -- General Styles -- */
 /* -------------------- */
 #wrap{
-	width:800px;
+	width:900px;
 	margin:70px auto;
 	margin-top: 30px;
 	font-family:"Open Sans", Arial, sans-serif;
@@ -65,7 +65,7 @@ a{
 	/* color:#0b8bbb; */
 }
 a:hover{
-	color: rgb(0,200,0);
+	color: rgb(255, 208, 0);
 	/* color:#577590; */
 }
 .line{
@@ -84,12 +84,12 @@ a:hover{
 /* ------------ */
 #header{
 	float:left;
-	width:800px;
+	width:900px;
 	margin:0 0 55px 0;
 }
 #header #header-content{
 	float:left;
-	width:800px;
+	width:900px;
 	margin-bottom: -50px;
 }
 #header #header-content h1{
@@ -136,7 +136,7 @@ a:hover{
 /* -- Content -- */
 /* ------------- */
 #content .cv-section{
-	width:800px;
+	width:900px;
 	margin:0 0 15px 0;
 }
 #content .cv-section h3{
@@ -145,10 +145,11 @@ a:hover{
 	margin:45px 0 30px 0;
 }
 #content .cv-section h4.title{
-	font-size:20px;
-	font-weight: 20px;
-	color:#000000;
+	font-size:15px;
+	font-style:normal;
+	color:rgb(0, 0, 0);
 	margin:0 0 -26px 0;
+	font-weight: 700;
 }
 
 #content .cv-section h4.conference{
@@ -159,13 +160,20 @@ a:hover{
 
 #content .cv-section h4.conference b{
 	font-size:15px;
-	font-style:normal;
-	color:rgb(131, 0, 0);
+	font-style:italic;
+	color:rgb(0, 0, 0);
+}
+
+#content .cv-section h4.conference span{
+	font-size:15px;
+	font-style:bold;
+	font-weight: 700;
+	color:rgb(90, 0, 0);
 }
 
 #content .cv-section h4.meta{
 	margin-top: -10px;
-	font-size:15px;
+	font-size:14px;
 	font-style:italic;
 	color:#777;
 	margin-bottom: 5px;
@@ -176,6 +184,13 @@ a:hover{
 	font-style:normal;
 	color:rgb(0, 0, 0);
 }
+
+#content .cv-section h4.meta span{
+	font-size:15px;
+	font-style:normal;
+	color:rgb(0, 0, 0);
+}
+
 #content .cv-section p{
 	font-size:14px;
 	color:#555;
@@ -233,9 +248,9 @@ a:hover{
 	/* border: 2px solid black; */
   }
   .buttonline{
-	background-color: rgb(0,90,0); 
+	background-color: #777; 
 	margin:auto;
-	width:830px;
+	width:930px;
 	font-family:"Open Sans", Arial, sans-serif;
 
   }
