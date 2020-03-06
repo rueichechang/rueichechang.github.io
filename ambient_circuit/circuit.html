@@ -1,78 +1,169 @@
-**Smartphone Programming CS165 Final Project - Ambient Circuit Assistant**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ruei-Che Chang | Dartmouth College</title>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="../styles/style.css" />
+<!--[if IE 6]>
+<script src="js/ie6-transparency.js"></script>
+<script>DD_belatedPNG.fix('#wrap .line, #header #header-photo');</script>
+<link rel="stylesheet" href="styles/ie6.css" />
+<![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->
+<!--[if IE 9]><link rel="stylesheet" href="styles/ie9.css" /><![endif]-->
+</head>
+<body>
 
-Members: Ruei-Che Chang and Te-Yen Wu
+<div id="wrap">
+  <div id="header">
+    <div id="header-content">
+      <!-- <div id = "button">
+        <a href="#publication" class = "button">Publication</a>
+        <a href="#manuscript" class = "button">Manuscript in Preparation</a>
+        <a href="#side" class = "button">Side projects</a>
+      </div>
+      <div class="line_black" style = "margin-top:-6px"></div> -->
+      <div style="height: 150px">
+        <h1 style="float: left;font-size: 32px">CS165 Smartphone Programming</h1>
+        <h1 style="float: right;font-size: 32px; color:darkblue;"> - Contextual Circuit Assistant</h1>
+
+        <br>
+        <h5>Ruei-Che Chang
+            <br>Te-Yen Wu
+        </h5>
+      </div>
+
+        <a href="LittleMonster.zip" download>Server Code</a><br>
+        <a href="uist2020v2.zip" download>Android Code</a><br>
+        <a href="uist.apk" download>Android apk</a><br>
+        <a href="https://docs.google.com/presentation/d/1OPmxS1Av_ERsHNudfcFkXE8uTvWvH29bnBqPSqdvbvs/edit?usp=sharing" download>Presentation</a><br>
+
+        
+      <div style="float:left;">
+        <h3>Demo Video</h3>
+        <a href="https://www.youtube.com/watch?v=DcnSzfU-zwU&fbclid=IwAR2Z4S5yR0Taje8LxbIeq1I1V0ZX-rR7Bt4LgmlPdS3ofmvkkuzFVLrkCrI">https://www.youtube.com/watch?v=DcnSzfU-zwU&fbclid=IwAR2Z4S5yR0Taje8LxbIeq1I1V0ZX-rR7Bt4LgmlPdS3ofmvkkuzFVLrkCrI</a>
+        <iframe width="800" height="auto"
+        src="https://www.youtube.com/watch?v=DcnSzfU-zwU&fbclid=IwAR2Z4S5yR0Taje8LxbIeq1I1V0ZX-rR7Bt4LgmlPdS3ofmvkkuzFVLrkCrI">
+        </iframe> 
+        </div>
+        
+        <div class="line_black" style = "margin-top:10px"></div> 
+
+        <h3>Motivation</h3>
+        <p style="color:rgb(0, 0, 0);">The increase in availability of electronics and the decrease of price offer wider range of people oppotunities in learning circuit prototype. However, when wanting to DIY in-situ or learn by self, novices get little chance to be under mentor's guidance. Also, though online resources can provide extensive knowledge, keeping searching and browsing is time-consuming and could cause distraction. In response, we propose Ambient Circuit Assistant, an accessible way to ambiently assist users in circuit prototyping by generating expert knowledge automatically based on the updates of the breadboard. We hope this system can offer novice users knowledgable yet smooth experience.</p>
+        <br>
+    <div class="line_black" style = "margin-top:10px"></div> 
+    <div style="float:left";>
+        <h3>System Structure</h3>
+        <img src="structure.png" alt="" height = 200px width = auto>
+    </div>
+      
+      <!-- <div id="header-photo"> <img src="images/head.png" alt="" /> </div> -->
+      
+    </div>
+
+  </div>
+  <div class="line_black" style = "margin-top:-6px"></div> 
+  <div style="float:left";>
+    <h3>Holes Segmentation</h3>
+    <p> First, We put the paper codes to hide the numbers and characters as they are noisy to segment the holes.
+        <br><br>
+        Second, considering the different illumination in various environments, we always elevate the brightness to some extent so that we can yield the binary picture and then we segment each hole by its width, height and area.
+        <br><br>
+        Finally, we will send the coordinate of each hole to Android Client, totally 400.
+        <br><br>
+        Functions used: cv.adaptiveThreshold, cv.dialate, cv.erode, cv.boundingRect, cv.findContours, opencv ArUco
+        
+        </p>
+    <img src="img.jpg" alt="" height = 210px width = auto>
+    <img src="thresh.jpg" alt="" height = 210px width = auto>
+    <img src="success_board.jpg" alt="" height = 210px width = auto>
+    </div>
+
+  <div class="line_black" style = "margin-top:-6px"></div> 
+
+  <div style="float:left";>
+    <h3>Hands Detection</h3>
+    <p>As mentioned in last section, we put the paper codes on each corner of breadboard. Once user insert or take away component, their hands will hide the codes so that we can infer whether they modify their breadboard or not. Of course, we will still update the image even the hands just cross by the breadboard.</p>
+    <img src="hand1.png" alt="" height = 210px width = auto>
+    <img src="hand2.png" alt="" height = 210px width = auto>
+    <img src="hand3.png" alt="" height = 210px width = auto>
+    </div>
+
+  <div class="line_black" style = "margin-top:-6px"></div> 
+
+  <div style="float:left";>
+    <h3>Object Detection & Location guess</h3>
+    <p>We use Mask-RCNN model to train 400 breadboard circuit images and test on 98 images. We have totally 20 classes of electronics. The following picture show the result of the model, where the contours of electronics can be detected</p>
+    <p> To find the pins of each component, we have two strategies:
+        <br><br>
+        First, for the long component (e.g. wire and resistor), we can get two end points simply by the most distant two points of the contour.
+        <br><br>
+        Second, for other given components, we simply find which holes are covered by the mask and infer the location by its specifications (e.g. button has four pins on the corners).
+        <br><br>
+        However, this algorithm depends on the mask predicted by the model. Hence, we cannot yield very satisfied results. </p>
+    <img src="mask.jpg" alt="" height = 300px width = auto>
+    <img src="location.jpg" alt="" height = 300px width = auto>
+    </div>
+
+  <div class="line_black" style = "margin-top:-6px"></div> 
+
+  <div style="float:left";>
+    <h3>Resistor Decoder</h3>
+    <p>Basically, in this section we do the same thing as object detection but the target has been changed to color band. And then we calculate the distance to the gold band and decode the resistor value afterwards.</p>
+    <img src="resistor11.png" alt="" height = 400px width = auto>
+    <img src="resistor1.png" alt="" height = 400px width = auto>
+
+    <img src="resistor22.png" alt="" height = 400px width = auto>
+    <img src="resistor2.png" alt="" height = 400px width = auto>
+    </div>
+
+  <div class="line_black" style = "margin-top:-6px"></div> 
+
+  <div style="float:left";>
+    <h3>Hands Detection</h3>
+    <p>As mentioned in last section, we put the paper codes on each corner of breadboard. Once user insert or take away component, their hands will hide the codes so that we can infer whether they modify their breadboard or not. Of course, we will still update the image even the hands just cross by the breadboard.</p>
+    <img src="hand1.png" alt="" height = 210px width = auto>
+    <img src="hand2.png" alt="" height = 210px width = auto>
+    <img src="hand3.png" alt="" height = 210px width = auto>
+    </div>
+
+  <div class="line_black" style = "margin-top:-6px"></div> 
+
+  <div style="float:left";>
+    <h3>Interface Design & Workflow</h3>
+    <p>Before starting helping, we need to know the positions of each holes. Hence, we first ask people to touch thte screen to activate our capturing algorithms. </p>
+    <p>After success, we will visualize each holes by overlaying many little squares on the screen. And then we first start to suggest them to connect the rails.</p>
+    <img src="start1.png" alt="" height = auto width = 270px>
+    <img src="start2.png" alt="" height = auto width = 270px>
+    <img src="start3.png" alt="" height = auto width = 270px>
+
+    <div class="line" style =></div> 
+    <!-- <br><br><br> -->
+    <p>User first insert red wire on the breadboard and after being recognized, the tips for the red wire disappear.</p>
+    <p>The same thing happens after the black wire is inserted. </p>
+    <img src="wire1.png" alt="" height = auto width = 400px>
+    <img src="wire2.png" alt="" height = auto width = 400px>
+    
+    <div class="line" style =></div> 
+    <p>And then user place the button on the breadboard, the tooltips will pop up. For example, the autocomplete tips tell user they need to connect resistor to the power, the wire to the ground and the wire to connect to the digital pin of arduino.</p>
+    <p>Same as trimpot. We can customize any tooltips for the electronics in our database.</p>
+
+    <img src="button.png" alt="" height = auto width = 400px>
+    <img src="trimpot.png" alt="" height = auto width = 400px>
+
+    <div class="line" style =></div> 
+    <p>If the component goes complicated, we can still indicate which pin do what, like LCD and IC. </p>
+    <p>We can also decode resistor and overlay the value in red on the screen. </p>
+    <img src="LCD.png" alt="" height = auto width = 400px>
+    <img src="resistor.png" alt="" height = auto width = 400px>
 
 
+    </div>
+  
 
-(##) Motivation
-
-The increase in availability of electronics and the decrease of price offer wider range of people oppotunities in learning circuit prototype. However, when wanting to DIY in-situ or learn by self, novices get little chance to be under mentor's guidance. Also, though online resources can provide extensive knowledge, keeping searching and browsing is time-consuming and could cause distraction. In response, we propose Ambient Circuit Assistant, an accessible way to ambiently assist users in circuit prototyping by generating expert knowledge automatically based on the updates of the breadboard. We hope this system can offer novice users knowledgable yet smooth experience.<div class="twentytwenty-container">
-    <img src="circuit.jpg" alt="">
-</div>
-
-(##) System Structure
-
-<div class="twentytwenty-container">
-    <img src="structure.png" alt="">
-</div>
-
-(##) Holes segmentation
-
-Resolution: 4032x3024 taken by Google Pixel 4.
-
-First, We put the paper codes to hide the numbers and characters as they are noisy to segment the holes.
-
-Second, considering the different illumination in various environments, we always elevate the brightness to some extent so that we can yield the binary picture and then we segment each hole by its width, height and area. 
-
-Finally, we will send the coordinate of each hole to Android Client, totally 400.
-
-Functions used: cv.adaptiveThreshold, cv.dialate, cv.erode, cv.boundingRect, cv.findContours, opencv ArUco
-
-<div class="twentytwenty-container">
-    <img src="img.jpg" alt="illuminated">
-    <img src="success_board.jpg" alt="captured">
-    <img src="thresh.jpg" alt="processed">
-</div>
-
-
-(##) Hands Detection
-
-As mentioned in last section, we put the paper codes on each corner of breadboard. Once user insert or take away component, their hands will hide the codes so that we can infer whether they modify their breadboard or not. Of course, we will still update the image even the hands just cross by the breadboard.
-
-(##) Object Detection
-
-We use Mask-RCNN model to train 400 breadboard circuit images and test on 98 images. We have totally 20 classes of electronics. The following picture show the result of the model, where the contours of electronics can be detected.
-
-<div class="twentytwenty-container">
-    <img src="mask.jpg" alt="">
-</div>
-
-
-(##) Location Guess
-
-To find the pins of each component, we have two strategies:
-
-First, for the long component (e.g. wire and resistor), we can get two end points simply by the most distant two points of the contour.
-
-Second, for other given components, we simply find which holes are covered by the mask and infer the location by its specifications (e.g. button has four pins on the corners).
-
-And of course, this algorithm depends on the mask predicted by the model. Hence, we cannot yield very satisfied results.
-
-<div class="twentytwenty-container">
-    <img src="mask.jpg" alt="">
-    <img src="location.jpg" alt="">
-</div>
-
-(##) Display Messages
-
-
-<!--- Markdeep & image comparison library - probably no need to change anything below -->
-<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="../resources/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="../resources/jquery.event.move.js"></script>
-<script src="../resources/jquery.twentytwenty.js"></script>
-<link href="../resources/offcanvas.css" rel="stylesheet">
-<link href="../resources/twentytwenty.css" rel="stylesheet" type="text/css" />
-<script>
-$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
-</script>
+<div id="spacing"></div>
+<!--hack for ie6 and ie7-->
+</body>
+</html>
