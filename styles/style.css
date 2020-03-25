@@ -11,23 +11,36 @@ URL:http://www.chris-creed.com
 /* -------------------- */
 /* -- General Styles -- */
 /* -------------------- */
+* {
+    font-family: 'Martel', serif;
+}
+
 #wrap{
 	width:900px;
 	margin:70px auto;
 	margin-top: 30px;
-	font-family:"Open Sans", Arial, sans-serif;
 	color:#555;
-	/* border:1px #eee solid;
+	border:1px #eee solid;
 	padding:70px 70px 20px 70px;
 	-webkit-box-shadow:0 0 50px #aaa;
 	-moz-box-shadow:0 0 30px #aaa;
 	box-shadow:0 0 50px rgb(170, 170, 170);
 	background:rgb(255, 255, 255);
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF)); */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
+}
+
+#intro p{
+	line-height:150%
+}
+
+#intro a{
+	color:rgb(189, 1, 1);
+	font-weight: normal;
 }
 body{
-	font-family:times, serif;
+	font-family: 'Martel', serif;
+	/* font-family: 'Merriweather', serif; */
 	background-color:#eee;
 	background-color:rgb(255, 255, 255);
 	line-height:150%
@@ -61,7 +74,7 @@ p{
 }
 a{
 	text-decoration:none;
-	color: rgb(0,90,0);
+	color: rgb(189,1,1);
 	/* color:#0b8bbb; */
 }
 a:hover{
@@ -75,7 +88,7 @@ a:hover{
 }
 .line_black{
 	clear:both;
-	border-bottom:2px rgb(0, 0, 0) solid;
+	/* border-bottom:2px rgb(0, 0, 0) solid; */
 	margin-bottom: 40px;
 	margin-top:20px
 }
@@ -147,15 +160,15 @@ a:hover{
 #content .cv-section h4.title{
 	font-size:15px;
 	font-style:normal;
-	color:rgb(0, 0, 0);
-	margin:0 0 -26px 0;
+	color:rgb(189, 1, 1);
+	margin:0 0 -35px 0;
 	font-weight: 700;
 }
 
 #content .cv-section h4.conference{
 	font-size:13px;
-	font-style:italic;
-	color:#777;
+	font-style:normal;
+	color:rgb(0, 0, 0);
 }
 
 #content .cv-section h4.conference b{
@@ -174,22 +187,11 @@ a:hover{
 #content .cv-section h4.meta{
 	margin-top: -10px;
 	font-size:14px;
-	font-style:italic;
-	color:#777;
+	color:rgb(2, 2, 2);
 	margin-bottom: 5px;
-	line-height:100%
-}
-#content .cv-section h4.meta b{
-	font-size:15px;
-	font-style:normal;
-	color:rgb(0, 0, 0);
+	line-height:120%
 }
 
-#content .cv-section h4.meta span{
-	font-size:15px;
-	font-style:normal;
-	color:rgb(0, 0, 0);
-}
 
 #content .cv-section p{
 	font-size:14px;
@@ -210,7 +212,9 @@ a:hover{
 #content .cv-section img{
 	margin-left: 10px;
 	height: auto;
-	width: 170px;
+	width: 150px;
+	float:left;
+	padding-right: 20px;
 }
 
 #content .cv-section span.project_link{
@@ -251,6 +255,4 @@ a:hover{
 	background-color: #777; 
 	margin:auto;
 	width:930px;
-	font-family:"Open Sans", Arial, sans-serif;
-
   }
