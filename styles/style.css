@@ -167,13 +167,13 @@ a:hover{
 
 #content .cv-section h4.conference{
 	font-size:13px;
-	font-style:normal;
+	font-style:italic;
 	color:rgb(0, 0, 0);
 }
 
 #content .cv-section h4.conference b{
-	font-size:15px;
-	font-style:italic;
+	/* font-size:15px; */
+	font-style:normal;
 	color:rgb(0, 0, 0);
 }
 
