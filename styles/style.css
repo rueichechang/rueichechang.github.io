@@ -35,14 +35,12 @@ URL:http://www.chris-creed.com
 }
 
 #intro a{
-	/* color: rgb(0,0,90); */
 	color: #0000E3;
 	font-weight: normal;
 	font-style: bold;
 }
 body{
 	font-family: 'Martel', serif;
-	/* font-family: 'Merriweather', serif; */
 	background-color:#eee;
 	background-color:rgb(255, 255, 255);
 	line-height:150%
