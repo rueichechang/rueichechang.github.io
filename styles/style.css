@@ -12,7 +12,7 @@ URL:http://www.chris-creed.com
 /* -- General Styles -- */
 /* -------------------- */
 * {
-    font-family: 'Martel', serif;
+    font-family: 'Arial', serif;
 }
 
 #wrap{
@@ -40,7 +40,7 @@ URL:http://www.chris-creed.com
 	font-style: bold;
 }
 body{
-	font-family: 'Martel', serif;
+	font-family: 'Arial', serif;
 	background-color:#eee;
 	background-color:rgb(255, 255, 255);
 	line-height:150%
@@ -87,8 +87,9 @@ a:hover{
 }
 .line{
 	clear:both;
-	border-bottom:3px #eee solid;
-	margin-bottom: 40px;
+	border-bottom:2px #eee solid;
+	margin-bottom: 10px;
+	margin-top:-25px
 }
 .line_black{
 	clear:both;
@@ -145,7 +146,7 @@ a:hover{
 	box-shadow:0 0 10px #aaa; */
 }
 #header #header-photo img{
-	width:160px;
+	width:100px;
 	height:auto;
 	/* border:1px #ddd solid; */
 }
@@ -164,8 +165,7 @@ a:hover{
 #content .cv-section h4.title{
 	font-size:15px;
 	font-style:normal;
-	color:rgb(62, 45, 109);
-	color: rgb(0,0,90);
+	color: rgb(0, 0, 0);
 	margin:0 0 -35px 0;
 	font-weight: 700;
 }
@@ -182,6 +182,8 @@ a:hover{
 	font-size:13px;
 	font-style:italic;
 	color:rgb(0, 0, 0);
+	margin-top: -18px;
+
 }
 
 #content .cv-section h4.conference b{
@@ -191,17 +193,17 @@ a:hover{
 }
 
 #content .cv-section h4.conference span{
-	font-size:15px;
-	font-style:bold;
+	font-size:12px;
+	font-style:normal;
 	font-weight: 700;
 	color:rgb(90, 0, 0);
 }
 
 #content .cv-section h4.meta{
-	margin-top: -15px;
+	margin-top: 35px;
 	font-size:12px;
 	color:rgb(2, 2, 2);
-	margin-bottom: 0px;
+	/* margin-bottom: 0px; */
 	line-height:120%
 }
 
@@ -225,7 +227,7 @@ a:hover{
 #content .cv-section img{
 	margin-left: 10px;
 	height: auto;
-	width: 150px;
+	width: 100px;
 	float:left;
 	padding-right: 20px;
 }
