@@ -169,12 +169,12 @@ a:hover{
 	margin:0 0 -35px 0;
 	font-weight: 700;
 }
-#content .cv-section span.award{
-	font-size:15px;
+#content .cv-section h4.conference span.award{
+	font-size:12px;
 	font-style:bold;
 	font-weight: 700;
 	margin-top: 0px;
-	color:rgb(89, 1, 1);
+	color:rgb(231, 170, 0);
 	text-decoration: underline;
 }
 
@@ -196,7 +196,6 @@ a:hover{
 	font-size:12px;
 	font-style:normal;
 	font-weight: 700;
-	color:rgb(90, 0, 0);
 	color: #9D9D9D;
 }
 
