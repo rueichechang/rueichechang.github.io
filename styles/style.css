@@ -41,9 +41,12 @@ URL:http://www.chris-creed.com
 }
 body{
 	font-family: 'Arial', serif;
-	background-color:#eee;
-	background-color:rgb(255, 255, 255);
-	line-height:150%
+	/* background-color:#eee;
+	background-color:rgb(97, 70, 70); */
+	line-height:150%;
+	background: #8896AB;
+	/* background: #C5D5E4; */
+	/* background: #466362; */
 }
 h1{
 	font-size:40px;
@@ -108,7 +111,7 @@ a:hover{
 #header #header-content{
 	float:left;
 	width:900px;
-	margin-bottom: -50px;
+	margin-bottom: -70px;
 }
 #header #header-content h1{
 	margin:0 0 2px 0;
