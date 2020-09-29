@@ -161,6 +161,11 @@ a:hover{
 	font-style:bold;
 }
 
+#header #header-content #intro .timeline a:hover{
+	color:rgb(136, 221, 255);
+	font-style:bold;
+}
+
 
 #header #header-content #news .newsitem{
 	color:rgb(116, 116, 116);
