@@ -28,8 +28,11 @@ URL:http://www.chris-creed.com
 	background:rgb(255, 255, 255);
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
-}
 
+	/* border: 1px double #000;
+outline: 5px solid #699;
+outline-offset: 5px; */
+}
 /* 
 #wrap{
 	width:900px;
@@ -57,8 +60,6 @@ URL:http://www.chris-creed.com
 }
 body{
 	font-family: 'Arial', serif;
-	/* background-color:#eee;
-	background-color:rgb(97, 70, 70); */
 	line-height:150%;
 }
 h1{
@@ -92,10 +93,6 @@ a{
 	text-decoration:none;
 	color: #007bb5;
 	color: #00818a;
-
-
-
-	/* color:#0b8bbb; */
 }
 a:hover{
 	color: rgba(98, 245, 208, 0.815);
@@ -153,19 +150,37 @@ a:hover{
 	width:75px;
 	float:left;
 }
+
+#header #header-content #intro .timeline{
+	color:rgb(0, 0, 0);
+	font-size: 13px;
+}
+
+#header #header-content #intro .timeline a{
+	color:rgb(25, 123, 252);
+	font-style:bold;
+}
+
+
+#header #header-content #news .newsitem{
+	color:rgb(116, 116, 116);
+	font-size: 13px;
+}
+
+
 #header #header-photo{
-	float:right;
+	float:center;
 	/* background-color:#eee; */
 	/* padding:5px 5px 2px 5px; */
 	/* -webkit-box-shadow:0 0 10px #aaa;
 	-moz-box-shadow:0 0 10px #aaa;
 	box-shadow:0 0 10px #aaa; */
-}
-#header #header-photo img{
-	width:100px;
+	width:140px;
 	height:auto;
-	/* border:1px #ddd solid; */
+	/* border: 1px black solid; */
+	border:1px rgb(0, 0, 0) solid;
 }
+
 /* ------------- */
 /* -- Content -- */
 /* ------------- */
@@ -239,7 +254,8 @@ a:hover{
 	height: auto;
 	width: 100px;
 	float:left;
-	padding-right: 20px;
+	padding-right: 10px;
+	/* border:1px rgb(0, 0, 0) solid; */
 }
 
 
@@ -249,6 +265,9 @@ a:hover{
 	color:rgb(0, 0, 0);
 	letter-spacing:0;
 }
+
+
+
 /* #content .cv-section span.con{
 	margin-top:-10px;
 	font-size:14px;
