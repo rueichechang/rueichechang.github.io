@@ -16,12 +16,11 @@ URL:http://www.chris-creed.com
 }
 
 #wrap{
-	width:900px;
+	width:960px;
 	margin:70px auto;
 	margin-top: 30px;
 	color:#555;
-	border:2px rgb(0, 0, 0) solid;
-	padding:70px 70px 20px 70px;
+	padding:70px 70px 20px 90px;
 	-webkit-box-shadow:0 0 50px #aaa;
 	-moz-box-shadow:0 0 30px #aaa;
 	box-shadow:0 0 50px rgb(170, 170, 170);
@@ -29,25 +28,11 @@ URL:http://www.chris-creed.com
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
 
-	/* border: 1px double #000;
-outline: 5px solid #699;
-outline-offset: 5px; */
+	border:5px #C4CBCA solid;
+	/* border: 10px double rgb(255, 0, 0); */
+	outline: 8px solid #5e6b85;
+	outline-offset: 0;
 }
-/* 
-#wrap{
-	width:900px;
-	margin:70px auto;
-	margin-top: 30px;
-	color:#555;
-	border:1px #eee solid;
-	padding:70px 70px 20px 70px;
-	-webkit-box-shadow:0 0 50px #aaa;
-	-moz-box-shadow:0 0 30px #aaa;
-	box-shadow:0 0 50px rgb(170, 170, 170);
-	background:rgb(255, 255, 255);
-	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
-} */
 
 #intro p{
 	line-height:150%
@@ -251,9 +236,16 @@ a:hover{
 }
 
 
+
+#content .cv-section-item .meta b{
+	color: black;
+}
+
 #content .cv-section-item{
 	padding:0 0 15px 0;
 }
+
+
 #content .cv-section img{
 	margin-left: 10px;
 	height: auto;
@@ -270,44 +262,9 @@ a:hover{
 	color:rgb(0, 0, 0);
 	letter-spacing:0;
 }
-
-
-
-/* #content .cv-section span.con{
-	margin-top:-10px;
-	font-size:14px;
-	color:rgb(0, 0, 90);
-	color: #9D9D9D;
-
-	letter-spacing:0;
-	cursor:pointer
+#content .cv-section-item h4.meta {
+	color: rgb(136, 136, 136);
 }
-
-#content .cv-section span.con:hover{
-	color:rgb(0, 0, 255);
-} */
-
-.button {
-	border: none;
-	color: white;
-	padding: 8px 16px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 20px;
-	margin: 4px 2px;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	cursor: pointer;
-	/* background-color: rgb(126, 170, 126);  */
-	color: rgb(255, 255, 255); 
-	/* border: 2px solid black; */
-  }
-  .buttonline{
-	background-color: #777; 
-	margin:auto;
-	width:930px;
-  }
 
   .fa {
 	padding: 5px;
