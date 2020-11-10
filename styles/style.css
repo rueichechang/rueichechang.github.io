@@ -313,6 +313,16 @@ a:hover{
 	font-size: 18px;
 }
 
+#content #selected h4.conference span.award{
+	font-style:bold;
+	font-weight: 700;
+	margin-top: 0px;
+	color:rgb(255, 60, 0);
+	text-decoration: underline;
+	line-height: 40px;
+}
+
+
 .paper_link{
 	background-color: #3B5998;
 	font-color: white;
