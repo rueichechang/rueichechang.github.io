@@ -28,10 +28,9 @@ URL:http://www.chris-creed.com
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
 
-	border:4px #aaa solid;
-	/* border: 10px double rgb(255, 0, 0); */
+	/* border:4px #aaa solid;
 	outline: 6px solid #350D36;
-	outline-offset: 0;
+	outline-offset: 0; */
 }
 
 #intro p{
