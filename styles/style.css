@@ -333,7 +333,9 @@ a:hover{
 }
 
 #header #header-content #CV a:hover{
-	color:#983e3b;
+	color:white;
+	background-color: black;
+	border: 3px solid black;
 }
 
 .page_link{
