@@ -28,9 +28,9 @@ URL:http://www.chris-creed.com
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
 
-	border:5px #C4CBCA solid;
+	border:4px #aaa solid;
 	/* border: 10px double rgb(255, 0, 0); */
-	outline: 8px solid #5e6b85;
+	outline: 6px solid #983b3b;
 	outline-offset: 0;
 }
 
@@ -99,6 +99,8 @@ a:hover{
 /* ------------ */
 /* -- Header -- */
 /* ------------ */
+
+
 #header{
 	float:left;
 	width:900px;
@@ -322,6 +324,13 @@ a:hover{
 	line-height: 40px;
 }
 
+#header #header-content #CV a{
+	color:black;
+}
+
+#header #header-content #CV a:hover{
+	font-weight: 700;
+}
 
 .paper_link{
 	background-color: #3B5998;
