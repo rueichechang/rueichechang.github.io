@@ -336,6 +336,12 @@ a:hover{
 	color:#983e3b;
 }
 
+.page_link{
+	background-color: #3f756a;
+	font-color: white;
+	border-radius: 5px; 
+}
+
 .paper_link{
 	background-color: #3B5998;
 	font-color: white;

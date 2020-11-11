@@ -24,28 +24,14 @@
         <a href="#side" class = "button">Side projects</a>
       </div>
       <div class="line_black" style = "margin-top:-6px"></div> -->
-      <div style="height: 150px">
-        <h1 style="float: left;font-size: 32px">CS165 Smartphone Programming</h1>
-        <h1 style="float: right;font-size: 32px; color:darkblue;"> - Contextual Circuit Assistant</h1>
-
-        <br>
-        <h5>Ruei-Che Chang
-            <br>Te-Yen Wu
-        </h5>
+      <div style="height: 80px">
+        <h1 style="float: left; font-size: 32px">CircuitLab: A System for Aiding Remote Electronics labs</h1>
+        <h4 style="float: left; font-size: 20px"><b>Ruei-Che Chang</b> , Te-Yen Wu, Zheer Xu , Xinyu Shi, Xuaguang Ma, Teddy Seyed, Xing-Dong Yang</h4>
       </div>
 
-        <a href="https://drive.google.com/file/d/1NbR0TrjWgHIPjz3MdO5Yi2L_nI7o62Ua/view?usp=sharing" download>Server Code</a><br>
-        <a href="https://drive.google.com/file/d/1b6U3EH76IiLlYXGw96vlLc0NvBW-se5d/view?usp=sharing" download>Android Code</a><br>
-        <a href="https://drive.google.com/file/d/15IDf01sK1Bh8AzYVUCEf4Kx8jT63YoTP/view?usp=sharing" download>Android apk</a><br>
-        <a href="https://docs.google.com/presentation/d/1OPmxS1Av_ERsHNudfcFkXE8uTvWvH29bnBqPSqdvbvs/edit?usp=sharing" download>Presentation</a><br>
-
-        
       <div style="float:left;">
-        <h3>Demo Video</h3>
-        <a href="https://www.youtube.com/watch?v=DcnSzfU-zwU&fbclid=IwAR2Z4S5yR0Taje8LxbIeq1I1V0ZX-rR7Bt4LgmlPdS3ofmvkkuzFVLrkCrI">https://www.youtube.com/watch?v=DcnSzfU-zwU&fbclid=IwAR2Z4S5yR0Taje8LxbIeq1I1V0ZX-rR7Bt4LgmlPdS3ofmvkkuzFVLrkCrI</a>
-        <iframe width="800" height="auto"
-        src="https://www.youtube.com/watch?v=DcnSzfU-zwU&fbclid=IwAR2Z4S5yR0Taje8LxbIeq1I1V0ZX-rR7Bt4LgmlPdS3ofmvkkuzFVLrkCrI">
-        </iframe> 
+        <iframe src="https://drive.google.com/file/d/1G_5csig_2gcf5wRIp1KXbWFGWdAYntGs/preview" width="640" height="400"></iframe>
+
         </div>
         
         <div class="line_black" style = "margin-top:10px"></div> 
@@ -129,38 +115,38 @@
     <img src="hand3.png" alt="" height = 210px width = auto>
     </div>
 
+    <div style="float:left";>
+      <h3>Interface Design & Workflow</h3>
+      <p>Before starting helping, we need to know the positions of each holes. Hence, we first ask people to touch thte screen to activate our capturing algorithms. </p>
+      <p>After success, we will visualize each holes by overlaying many little squares on the screen. And then we first start to suggest them to connect the rails.</p>
+      <img src="start1.png" alt="" height = auto width = 270px>
+      <img src="start2.png" alt="" height = auto width = 270px>
+      <img src="start3.png" alt="" height = auto width = 270px>
+  
+      <div class="line" style =></div> 
+      <!-- <br><br><br> -->
+      <p>User first insert red wire on the breadboard and after being recognized, the tips for the red wire disappear.</p>
+      <p>The same thing happens after the black wire is inserted. </p>
+      <img src="wire1.png" alt="" height = auto width = 400px>
+      <img src="wire2.png" alt="" height = auto width = 400px>
+      
+      <div class="line" style =></div> 
+      <p>And then user place the button on the breadboard, the tooltips will pop up. For example, the autocomplete tips tell user they need to connect resistor to the power, the wire to the ground and the wire to connect to the digital pin of arduino.</p>
+      <p>Same as trimpot. We can customize any tooltips for the electronics in our database.</p>
+  
+      <img src="button.png" alt="" height = auto width = 400px>
+      <img src="trimpot.png" alt="" height = auto width = 400px>
+  
+      <div class="line" style =></div> 
+      <p>If the component goes complicated, we can still indicate which pin do what, like LCD and IC. </p>
+      <p>We can also decode resistor and overlay the value in red on the screen. </p>
+      <img src="LCD.png" alt="" height = auto width = 400px>
+      <img src="resistor.png" alt="" height = auto width = 400px>
+  
+  
+      </div>
+
   <div class="line_black" style = "margin-top:-6px"></div> 
-
-  <div style="float:left";>
-    <h3>Interface Design & Workflow</h3>
-    <p>Before starting helping, we need to know the positions of each holes. Hence, we first ask people to touch thte screen to activate our capturing algorithms. </p>
-    <p>After success, we will visualize each holes by overlaying many little squares on the screen. And then we first start to suggest them to connect the rails.</p>
-    <img src="start1.png" alt="" height = auto width = 270px>
-    <img src="start2.png" alt="" height = auto width = 270px>
-    <img src="start3.png" alt="" height = auto width = 270px>
-
-    <div class="line" style =></div> 
-    <!-- <br><br><br> -->
-    <p>User first insert red wire on the breadboard and after being recognized, the tips for the red wire disappear.</p>
-    <p>The same thing happens after the black wire is inserted. </p>
-    <img src="wire1.png" alt="" height = auto width = 400px>
-    <img src="wire2.png" alt="" height = auto width = 400px>
-    
-    <div class="line" style =></div> 
-    <p>And then user place the button on the breadboard, the tooltips will pop up. For example, the autocomplete tips tell user they need to connect resistor to the power, the wire to the ground and the wire to connect to the digital pin of arduino.</p>
-    <p>Same as trimpot. We can customize any tooltips for the electronics in our database.</p>
-
-    <img src="button.png" alt="" height = auto width = 400px>
-    <img src="trimpot.png" alt="" height = auto width = 400px>
-
-    <div class="line" style =></div> 
-    <p>If the component goes complicated, we can still indicate which pin do what, like LCD and IC. </p>
-    <p>We can also decode resistor and overlay the value in red on the screen. </p>
-    <img src="LCD.png" alt="" height = auto width = 400px>
-    <img src="resistor.png" alt="" height = auto width = 400px>
-
-
-    </div>
   
 
 <div id="spacing"></div>
