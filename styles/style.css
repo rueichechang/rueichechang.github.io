@@ -325,10 +325,11 @@ a:hover{
 
 #header #header-content #CV a{
 	color:black;
-	background-color: #EEEEEE;
-	border: 3px solid #aaa;
+	background-color:white;
+	border: 3px solid black;
 	font-size: 24px;
-	outline: 3px solid black;
+	border-radius: 10px;
+	/* outline: 3px solid black; */
 }
 
 #header #header-content #CV a:hover{
