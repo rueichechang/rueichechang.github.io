@@ -326,10 +326,12 @@ a:hover{
 
 #header #header-content #CV a{
 	color:black;
+	border: 3px solid black;
+	font-size: 24px;
 }
 
 #header #header-content #CV a:hover{
-	font-weight: 700;
+	color:#983e3b;
 }
 
 .paper_link{
