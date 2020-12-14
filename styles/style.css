@@ -155,8 +155,9 @@ a:hover{
 
 
 #header #header-content #news .newsitem{
-	color:rgb(116, 116, 116);
+	color:black;
 	font-size: 13px;
+
 }
 
 
@@ -284,7 +285,20 @@ a:hover{
 	/* padding-right:10px; */
 	border-radius: 10px; 
 	overflow: hidden;
+	width: 320px;
+	height:200px;
 }
+
+#content #selected .cv-section-item img{
+	float:left;
+	/* padding-right:10px; */
+	border-radius: 10px; 
+	overflow: hidden;
+	width: 320px;
+	height:200px;
+}
+
+
 
 #content #selected .cv-section-item h4{
 	font-style: bold;
