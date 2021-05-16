@@ -191,7 +191,7 @@ a:hover{
 	font-style:normal;
 	color: rgb(0, 0, 0);
 	margin:0 0 -35px 0;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 #content .cv-section h4.conference span.award{
 	font-size:12px;
@@ -275,7 +275,7 @@ a:hover{
 }
 
 #content #selected .cv-section-item {
-	height: 200px;
+	height: 130px;
 	font-style: bold;
 }
 
@@ -292,10 +292,10 @@ a:hover{
 #content #selected .cv-section-item img{
 	float:left;
 	/* padding-right:10px; */
-	border-radius: 10px; 
+	/* border-radius: 10px;  */
 	overflow: hidden;
-	width: 320px;
-	height:200px;
+	width: 240px;
+	height:150px;
 }
 
 
@@ -308,24 +308,29 @@ a:hover{
 
 #content #selected .cv-section-item #text{
 	padding-left: 100px;
-	margin-left: 250px;
+	margin-left: 170px;
+}
+
+#content #selected .cv-section-item #text h4{
+	padding-top: 5px;
 }
 
 #content #selected .cv-section-item .title{
-	font-weight: bold;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 #content #selected .cv-section-item .meta{
-	font-size: 18px;
+	font-size: 14px;
 }
 
 #content #selected .cv-section-item .conference{
-	font-size: 18px;
+	font-size: 14px;
 	color: #aaa;
 }
 
 #content #selected .cv-section-item .conference span{
-	font-size: 18px;
+	font-size: 14px;
 }
 
 #content #selected h4.conference span.award{
