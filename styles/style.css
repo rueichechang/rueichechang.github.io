@@ -102,8 +102,8 @@ a:hover{
 .line_black{
 	clear:both;
 	/* border-bottom:2px rgb(0, 0, 0) solid; */
-	margin-bottom: 40px;
-	margin-top:20px
+	margin-bottom: 0px;
+	margin-top:0px
 }
 /* ------------ */
 /* -- Header -- */
@@ -154,12 +154,13 @@ a:hover{
 }
 
 #header #header-content #intro .timeline a{
-	color:rgb(25, 123, 252);
+	color:#3B5998;
 	font-style:bold;
 }
 
 #header #header-content #intro .timeline a:hover{
-	color:rgb(136, 221, 255);
+	/* color:red; */
+	text-decoration: underline;
 	font-style:bold;
 }
 
@@ -331,7 +332,7 @@ a:hover{
 }
 
 #content #selected .cv-section-item .meta{
-	font-size: 14px;
+	font-size: 13px;
 }
 
 #content #selected .cv-section-item .conference{
@@ -352,19 +353,20 @@ a:hover{
 	line-height: 40px;
 }
 
-#header #header-content #CV a{
+#top #CV a{
 	color:black;
 	background-color:white;
-	border: 3px solid black;
+	border: 1px solid black;
 	font-size: 24px;
 	border-radius: 10px;
 	/* outline: 3px solid black; */
 }
 
-#header #header-content #CV a:hover{
+#top #CV a:hover{
 	color:white;
 	background-color: black;
-	border: 3px solid black;
+	border: 1px solid black;
+	/* text-decoration: underline; */
 }
 
 .page_link{
