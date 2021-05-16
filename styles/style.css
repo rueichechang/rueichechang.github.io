@@ -18,12 +18,13 @@ URL:http://www.chris-creed.com
 #wrap{
 	width:960px;
 	margin:70px auto;
-	margin-top: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	color:#555;
-	padding:50px 70px 20px 90px;
+	padding:10px 10px 20px 20px;
 	-webkit-box-shadow:0 0 50px #aaa;
 	-moz-box-shadow:0 0 30px #aaa;
-	box-shadow:0 0 50px rgb(170, 170, 170);
+	box-shadow:0 30px 50px rgb(170, 170, 170);
 	background:rgb(255, 255, 255);
 	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
@@ -31,6 +32,15 @@ URL:http://www.chris-creed.com
 	/* border:4px #aaa solid;
 	outline: 6px solid #350D36;
 	outline-offset: 0; */
+}
+
+#top{
+	padding:10px 10px 0px 20px;
+	width:960px;
+	height: 40px; 
+	margin: auto;
+	background-color: #3B5998;
+	border-top: 0px #987f3b solid;
 }
 
 #intro p{
@@ -308,7 +318,7 @@ a:hover{
 
 #content #selected .cv-section-item #text{
 	padding-left: 100px;
-	margin-left: 170px;
+	margin-left: 160px;
 }
 
 #content #selected .cv-section-item #text h4{
