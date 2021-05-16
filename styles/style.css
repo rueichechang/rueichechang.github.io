@@ -112,12 +112,12 @@ a:hover{
 
 #header{
 	float:left;
-	width:900px;
+	width:920px;
 	margin:0 0 55px 0;
 }
 #header #header-content{
 	float:left;
-	width:900px;
+	width:920px;
 	margin-bottom: -70px;
 }
 #header #header-content h1{
@@ -188,7 +188,7 @@ a:hover{
 /* -- Content -- */
 /* ------------- */
 #content .cv-section{
-	width:900px;
+	width:920px;
 	margin:0 0 15px 0;
 }
 #content .cv-section h3{
@@ -304,8 +304,8 @@ a:hover{
 	/* padding-right:10px; */
 	/* border-radius: 10px;  */
 	overflow: hidden;
-	width: 240px;
-	height:150px;
+	width: 200px;
+	height:125px;
 }
 
 
@@ -318,7 +318,7 @@ a:hover{
 
 #content #selected .cv-section-item #text{
 	padding-left: 100px;
-	margin-left: 160px;
+	margin-left: 120px;
 }
 
 #content #selected .cv-section-item #text h4{
