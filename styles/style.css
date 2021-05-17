@@ -207,14 +207,12 @@ a:hover{
 #content .cv-section h4.conference span.award{
 	font-size:12px;
 	font-style:bold;
-	font-weight: 700;
-	margin-top: 0px;
 	color:rgb(194, 48, 3);
 	text-decoration: underline;
 }
 
 #content .cv-section h4.conference{
-	font-size:13px;
+	font-size:12px;
 	font-style:italic;
 	color:rgb(0, 0, 0);
 	margin-top: -18px;
@@ -336,7 +334,7 @@ a:hover{
 }
 
 #content #selected .cv-section-item .conference{
-	font-size: 14px;
+	font-size: 13px;
 	color: #aaa;
 }
 
@@ -346,11 +344,9 @@ a:hover{
 
 #content #selected h4.conference span.award{
 	font-style:bold;
-	font-weight: 700;
-	margin-top: 0px;
 	color:rgb(255, 60, 0);
 	text-decoration: underline;
-	line-height: 40px;
+	/* line-height: 40px; */
 }
 
 #top #CV a{
