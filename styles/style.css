@@ -303,7 +303,7 @@ a:hover{
 	/* padding-right:10px; */
 	/* border-radius: 10px;  */
 	overflow: hidden;
-	width: 200px;
+	width: 190px;
 	height:125px;
 }
 
@@ -316,8 +316,8 @@ a:hover{
 }
 
 #content #selected .cv-section-item #text{
-	padding-left: 100px;
-	margin-left: 120px;
+	/* padding-left: 100px; */
+	margin-left: 110px;
 }
 
 #content #selected .cv-section-item #text h4{
@@ -330,11 +330,11 @@ a:hover{
 }
 
 #content #selected .cv-section-item .meta{
-	font-size: 13px;
+	font-size: 14px;
 }
 
 #content #selected .cv-section-item .conference{
-	font-size: 13px;
+	font-size: 14px;
 	color: #aaa;
 }
 
@@ -345,6 +345,7 @@ a:hover{
 #content #selected h4.conference span.award{
 	font-style:bold;
 	color:rgb(255, 60, 0);
+	font-size: 14px;
 	text-decoration: underline;
 	/* line-height: 40px; */
 }
@@ -354,7 +355,7 @@ a:hover{
 	background-color:white;
 	border: 1px solid black;
 	font-size: 24px;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	/* outline: 3px solid black; */
 }
 
@@ -405,6 +406,7 @@ a:hover{
   
   .fa:hover {
 	  opacity: 0.7;
+	  color:white;
   }
   .fa-facebook {
 	background: #3B5998;
