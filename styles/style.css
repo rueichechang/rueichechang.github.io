@@ -85,12 +85,10 @@ p{
 }
 a{
 	text-decoration:none;
-	color: #007bb5;
-	color: #00818a;
-	color: white;
+	color: #3B5998;
 }
 a:hover{
-	color: rgba(0, 0, 0, 0.815);
+	color: rgba(0, 0, 0, 0.609);
 	/* color:#577590; */
 }
 .line{
@@ -230,7 +228,7 @@ a:hover{
 	font-style:normal;
 	/* font-weight: 700; */
 	color: #9D9D9D;
-	color:white
+	color:black;
 }
 
 #content .cv-section h4.meta{
@@ -360,7 +358,7 @@ a:hover{
 }
 
 #top #CV a:hover{
-	color:white;
+	color:black;
 	background-color: black;
 	border: 1px solid black;
 	/* text-decoration: underline; */
@@ -368,26 +366,26 @@ a:hover{
 
 .page_link{
 	background-color: #3f756a;
-	font-color: white;
+	font-color: black;
 	border-radius: 5px; 
 }
 
 .paper_link{
-	background-color: #3B5998;
-	font-color: white;
-	border-radius: 5px; 
+	/* background-color: #3B5998; */
+	font-color: black;
+	/* border-radius: 5px;  */
 }
 
 .video_link{
-	background-color: #983e3b;
-	font-color: white;
-	border-radius: 5px; 
+	/* background-color: #983e3b; */
+	font-color: black;
+	/* border-radius: 5px;  */
 }
 
 .talk_link{
-	background-color: #987f3b;
-	font-color: white;
-	border-radius: 5px; 
+	/* background-color: #987f3b; */
+	font-color: black;
+	/* border-radius: 5px;  */
 }
 .project_link a{
 	color: black;
