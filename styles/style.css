@@ -43,6 +43,15 @@ URL:http://www.chris-creed.com
 	border-top: 0px #987f3b solid;
 }
 
+#bot{
+	padding:10px 10px 0px 20px;
+	width:960px;
+	height: 40px; 
+	margin: auto;
+	background-color: #484848;
+	border-top: 0px #987f3b solid;
+}
+
 #intro p{
 	line-height:150%
 }
