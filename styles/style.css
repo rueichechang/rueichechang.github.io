@@ -14,7 +14,14 @@ URL:http://www.chris-creed.com
 * {
     font-family: 'Arial', serif;
 }
-
+::selection {
+	background: #000000; /* WebKit/Blink Browsers */
+	color: white;
+  }
+  ::-moz-selection {
+	background: #000000; /* Gecko Browsers */
+	color: white;
+  }
 #wrap{
 	width:960px;
 	margin:70px auto;
