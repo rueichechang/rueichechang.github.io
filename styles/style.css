@@ -12,18 +12,18 @@ URL:http://www.chris-creed.com
 /* -- General Styles -- */
 /* -------------------- */
 * {
-    font-family: 'Arial', serif;
+	font-family: 'Alegreya', serif;
 }
 ::selection {
-	background: #000000; /* WebKit/Blink Browsers */
-	color: white;
+	background: rgb(206, 206, 206); /* WebKit/Blink Browsers */
+	color: black;
   }
   ::-moz-selection {
-	background: #000000; /* Gecko Browsers */
-	color: white;
+	background: #CFC096; /* WebKit/Blink Browsers */
+	color: black;
   }
 #wrap{
-	width:960px;
+	width:1000px;
 	margin:70px auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -41,21 +41,23 @@ URL:http://www.chris-creed.com
 	outline-offset: 0; */
 }
 
+
+
 #top{
-	padding:10px 10px 0px 20px;
-	width:960px;
+	padding:15px 10px 1px 20px;
+	width:1000px;
 	height: 40px; 
 	margin: auto;
-	background-color: #484848;
+	background-color: #00274c;
 	border-top: 0px #987f3b solid;
 }
 
 #bot{
 	padding:10px 10px 0px 20px;
-	width:960px;
+	width:1000px;
 	height: 40px; 
 	margin: auto;
-	background-color: #484848;
+	background-color: #00274c;
 	border-top: 0px #987f3b solid;
 }
 
@@ -69,9 +71,10 @@ URL:http://www.chris-creed.com
 	font-style: bold;
 }
 body{
-	font-family: 'Arial', serif;
+	font-family: 'Alegreya', serif;
 	line-height:150%;
 }
+
 h1{
 	font-size:40px;
 	margin:0 0 30px 0;
@@ -101,11 +104,11 @@ p{
 }
 a{
 	text-decoration:none;
-	color: #3B5998;
+	color: #936639;
 }
 a:hover{
-	color: rgba(0, 0, 0, 0.609);
-	/* color:#577590; */
+	color:#000000;
+	background-color: #FFCB05;
 }
 .line{
 	clear:both;
@@ -123,15 +126,46 @@ a:hover{
 /* -- Header -- */
 /* ------------ */
 
+#top a{
+	float: right; 
+	font-size: 32px; 
+	color:#FFCB05; 
+	border: 1px solid #FFCB05; 
+	padding:5px; 
+	margin-top: -5px;
+}
+#top a:hover{
+	color:#00274c;   
+	background-color: #FFCB05;
+	/* border: 2px solid #FFCB05;  */
+	/* margin-top: -7px; */
+}
 
 #header{
 	float:left;
-	width:920px;
+	width:1000px;
 	margin:0 0 55px 0;
 }
+
+#header #intro{
+	color: black;
+}
+
+#header #intro a{
+	color: #936639;
+	text-decoration: underline;
+}
+
+#header #intro a:hover{
+	color: #000000;
+	background-color: #FFCB05;
+	text-decoration: none;
+}
+
+
 #header #header-content{
 	float:left;
-	width:920px;
+	width:1000px;
 	margin-bottom: -70px;
 }
 #header #header-content h1{
@@ -177,11 +211,13 @@ a:hover{
 	text-decoration: underline;
 	font-style:bold;
 }
-
+#header #header-content #experience p{
+	font-size: 14px
+}
 
 #header #header-content #news .newsitem{
-	color:black;
-	font-size: 13px;
+	/* color:black; */
+	font-size: 14px;
 
 }
 
@@ -203,7 +239,7 @@ a:hover{
 /* -- Content -- */
 /* ------------- */
 #content .cv-section{
-	width:920px;
+	width:960px;
 	margin:0 0 15px 0;
 }
 #content .cv-section h3{
@@ -212,21 +248,21 @@ a:hover{
 	margin:45px 0 30px 0;
 }
 #content .cv-section h4.title{
-	font-size:15px;
+	/* font-size:15px; */
 	font-style:normal;
 	color: rgb(0, 0, 0);
 	margin:0 0 -35px 0;
 	/* font-weight: 700; */
 }
 #content .cv-section h4.conference span.award{
-	font-size:12px;
+	/* font-size:12px; */
 	font-style:bold;
 	color:rgb(194, 48, 3);
 	text-decoration: underline;
 }
 
 #content .cv-section h4.conference{
-	font-size:12px;
+	/* font-size:12px; */
 	font-style:italic;
 	color:rgb(0, 0, 0);
 	margin-top: -18px;
@@ -240,7 +276,7 @@ a:hover{
 }
 
 #content .cv-section h4.conference span{
-	font-size:12px;
+	/* font-size:14px; */
 	font-style:normal;
 	/* font-weight: 700; */
 	color: #9D9D9D;
@@ -249,7 +285,7 @@ a:hover{
 
 #content .cv-section h4.meta{
 	margin-top: 35px;
-	font-size:12px;
+	/* font-size:14px; */
 	color:rgb(2, 2, 2);
 	/* margin-bottom: 0px; */
 	line-height:120%
@@ -257,7 +293,7 @@ a:hover{
 
 
 #content .cv-section p{
-	font-size:14px;
+	/* font-size:140px; */
 	color:#555;
 	letter-spacing:0;
 }
@@ -276,7 +312,7 @@ a:hover{
 #content .cv-section img{
 	margin-left: 10px;
 	height: auto;
-	width: 100px;
+	/* width: 8000px; */
 	float:left;
 	padding-right: 10px;
 	/* border:1px rgb(0, 0, 0) solid; */
@@ -317,15 +353,15 @@ a:hover{
 	/* padding-right:10px; */
 	/* border-radius: 10px;  */
 	overflow: hidden;
-	width: 190px;
-	height:125px;
+	width: 200px;
+	/* height:125px; */
 }
 
 
 
 #content #selected .cv-section-item h4{
 	font-style: bold;
-	font-size: 20px;
+	/* font-size: 200px; */
 	line-height: 20px;
 }
 
@@ -340,11 +376,12 @@ a:hover{
 
 #content #selected .cv-section-item .title{
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 18px;
+	color: #000000;
 }
 
 #content #selected .cv-section-item .meta{
-	font-size: 14px;
+	font-size: 15px;
 }
 
 #content #selected .cv-section-item .conference{
@@ -365,17 +402,17 @@ a:hover{
 }
 
 #top #CV a{
-	color:black;
-	background-color:white;
-	border: 1px solid black;
+	color:#00274c;
+	background-color:rgb(189, 189, 189);
+	border: 1px solid #00274c;
 	font-size: 24px;
 	/* border-radius: 10px; */
 	/* outline: 3px solid black; */
 }
 
 #top #CV a:hover{
-	color:black;
-	background-color: rgb(189, 189, 189);
+	color:#00274c;
+	background-color: #cfc096;
 	border: 1px solid black;
 	/* text-decoration: underline; */
 }
