@@ -1,0 +1,358 @@
+/*
+Template Name:Azuka HTML Template
+Description:A CV/Resume HTML Template
+Author:Chris Creed
+URL:http://www.chris-creed.com
+*/
+
+/* Colors:Blue - #0b8bbb // Orange - #e86e14 */
+
+@import "reset.css";
+/* -------------------- */
+/* -- General Styles -- */
+/* -------------------- */
+* {
+	font-family: 'Alegreya', serif;
+}
+::selection {
+	background: rgb(206, 206, 206); /* WebKit/Blink Browsers */
+	color: black;
+  }
+  ::-moz-selection {
+	background: #CFC096; /* WebKit/Blink Browsers */
+	color: black;
+  }
+#wrap{
+	width:1000px;
+	margin:50px auto;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	color: black;
+	padding:20px 10px 50px 50px;
+	-webkit-box-shadow:10 10 50px #aaa;
+	-moz-box-shadow:30 30 30 30px #aaa;
+	box-shadow: 0 0px 50px rgb(170, 170, 170);
+	background:rgb(255, 255, 255);
+	background:-moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
+}
+
+body{
+	font-family: 'Alegreya', serif;
+	line-height:125%;
+}
+
+.line{
+	clear:both;
+	border-bottom:2px #eee solid;
+	margin-bottom: 10px;
+	margin-top:-25px
+}
+.line_black{
+	clear:both;
+	/* border-bottom:2px rgb(0, 0, 0) solid; */
+	margin-bottom: 0px;
+	margin-top:0px
+}
+/* ------------ */
+/* -- Header -- */
+/* ------------ */
+#header #header-content h1{
+	font-size:32px;
+	letter-spacing:0px;
+	text-align: center;
+	
+}
+
+#header #header-content p{
+	font-size:18px;
+	letter-spacing:0px;
+	text-align: center;
+}
+
+#header #header-content p #association{
+	color: #555;
+}
+
+/* ------------- */
+/* -- Content -- */
+/* ------------- */
+#content .cv-section{
+	width:960px;
+	margin:0 0 15px 0;
+}
+#content .cv-section h3{
+	font-size:28px;
+	color:rgb(0, 0, 0);
+	margin:45px 0 30px 0;
+}
+#content .cv-section h4.title{
+	/* font-size:15px; */
+	font-style:normal;
+	color: rgb(0, 0, 0);
+	margin:0 0 -35px 0;
+	/* font-weight: 700; */
+}
+#content .cv-section h4.conference span.award{
+	/* font-size:12px; */
+	font-style:bold;
+	color:rgb(194, 48, 3);
+	text-decoration: underline;
+}
+
+#content .cv-section h4.conference{
+	/* font-size:12px; */
+	font-style:italic;
+	color:rgb(0, 0, 0);
+	margin-top: -18px;
+
+}
+
+#content .cv-section h4.conference b{
+	/* font-size:15px; */
+	font-style:normal;
+	color:rgb(0, 0, 0);
+}
+
+#content .cv-section h4.conference span{
+	/* font-size:14px; */
+	font-style:normal;
+	/* font-weight: 700; */
+	color: #9D9D9D;
+	color:black;
+}
+
+#content .cv-section h4.meta{
+	margin-top: 35px;
+	/* font-size:14px; */
+	color:rgb(2, 2, 2);
+	/* margin-bottom: 0px; */
+	line-height:120%
+}
+
+
+#content .cv-section p{
+	/* font-size:140px; */
+	color:#555;
+	letter-spacing:0;
+}
+
+
+
+#content .cv-section-item .meta b{
+	color: black;
+}
+
+#content .cv-section-item{
+	padding:0 0 15px 0;
+}
+
+
+#content .cv-section img{
+	margin-left: 10px;
+	height: auto;
+	/* width: 8000px; */
+	float:left;
+	padding-right: 10px;
+	/* border:1px rgb(0, 0, 0) solid; */
+}
+
+
+#content .cv-section span.project_link{
+	margin-top:-10px;
+	font-size:14px;
+	color:rgb(0, 0, 0);
+	letter-spacing:0;
+}
+#content .cv-section-item h4.meta {
+	color: rgb(136, 136, 136);
+}
+
+#content #selected{
+	color:black;
+}
+
+#content #selected .cv-section-item {
+	height: 130px;
+	font-style: bold;
+}
+
+
+#content #selected .cv-section-item iframe{
+	float:left;
+	/* padding-right:10px; */
+	border-radius: 10px; 
+	overflow: hidden;
+	width: 320px;
+	height:200px;
+}
+
+#content #selected .cv-section-item img{
+	float:left;
+	/* padding-right:10px; */
+	/* border-radius: 10px;  */
+	overflow: hidden;
+	width: 200px;
+	/* height:125px; */
+}
+
+
+
+#content #selected .cv-section-item h4{
+	font-style: bold;
+	/* font-size: 200px; */
+	line-height: 20px;
+}
+
+#content #selected .cv-section-item #text{
+	/* padding-left: 100px; */
+	margin-left: 110px;
+}
+
+#content #selected .cv-section-item #text h4{
+	padding-top: 5px;
+}
+
+#content #selected .cv-section-item .title{
+	font-weight: normal;
+	font-size: 18px;
+	color: #000000;
+}
+
+#content #selected .cv-section-item .meta{
+	font-size: 15px;
+}
+
+#content #selected .cv-section-item .conference{
+	font-size: 14px;
+	color: #aaa;
+}
+
+#content #selected .cv-section-item .conference span{
+	font-size: 14px;
+}
+
+#content #selected h4.conference span.award{
+	font-style:bold;
+	color:rgb(255, 60, 0);
+	font-size: 14px;
+	text-decoration: underline;
+	/* line-height: 40px; */
+}
+
+#top #CV a{
+	color:#00274c;
+	background-color:rgb(189, 189, 189);
+	border: 1px solid #00274c;
+	font-size: 24px;
+	/* border-radius: 10px; */
+	/* outline: 3px solid black; */
+}
+
+#top #CV a:hover{
+	color:#00274c;
+	background-color: #cfc096;
+	border: 1px solid black;
+	/* text-decoration: underline; */
+}
+
+.page_link{
+	background-color: #3f756a;
+	font-color: black;
+	border-radius: 5px; 
+}
+
+.paper_link{
+	/* background-color: #3B5998; */
+	font-color: black;
+	/* border-radius: 5px;  */
+}
+
+.video_link{
+	/* background-color: #983e3b; */
+	font-color: black;
+	/* border-radius: 5px;  */
+}
+
+.talk_link{
+	/* background-color: #987f3b; */
+	font-color: black;
+	/* border-radius: 5px;  */
+}
+.project_link a{
+	color: black;
+}
+
+.fa {
+	padding: 5px;
+	font-size: 30px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	text-decoration: none;
+	/* margin: 5px 2px; */
+	border-radius: 100%;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+	  color:white;
+  }
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+  .fa-google {
+	background: #dd4b39;
+	color: white;
+  }
+  
+  .fa-linkedin {
+	background: #007bb5;
+	color: white;
+  }
+
+.noselect {
+-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	background: #333;
+	margin: -5px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+	color: #222;
+	font-size: 18px;
+	float: right;
+	color: white;
+}
+button:hover {
+box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+font-size: 15px;
+transition: 500ms;
+}
+
+button:focus {
+outline: none;
+}
+
+.white:hover {
+color: white;
+text-shadow: 0px 0px 10px #e4e4e4;
+}
