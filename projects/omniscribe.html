@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Ruei-Che Chang | Michigan CSE</title>
+<title>OmniScribe: Authoring Immersive Audio Descriptions for 360° Videos</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="project_style.css" />
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lora|Martel|Merriweather|PT+Serif&display=swap" rel="stylesheet">
@@ -9,13 +9,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="images/doggy.png">
+<script src="jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=IBM+Plex+Serif&display=swap');
 </style>
-  
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=IBM+Plex+Serif&display=swap');
+</style>
 
 <body style="background-color: #e4e1df; background-repeat:no-repeat;  background-size: cover;">
 
@@ -23,8 +29,64 @@
   <div id="header">
     <div id="header-content">
       <h1 id="paper_title">OmniScribe: Authoring Immersive Audio Description for 360° Videos</h1>
-      <p id="author_infos"><a href="https://rueichechang.github.io/">Ruei-Che Chang</a><sup>1</sup>, Chao-Hsian Ting<sup>2</sup>, Chia-Sheng Hung<sup>2</sup>, Wan-Chen Lee<sup>2</sup>, <br>Liang-Jin Chen<sup>2</sup>, Yu-Tzu Chao<sup>3</sup>, <a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/">Bing-Yu Chen</a><sup>2</sup>, <a href="http://guoanhong.com/">Anhong Guo</a><sup>1</sup></p>
-      <p id="association"><sup>1</sup><a href="https://cse.engin.umich.edu/">University of Michigan</a>, <sup>2</sup><a href="https://www.csie.ntu.edu.tw/">National Taiwan University</a>, <sup>3</sup><a href="https://www.dvs.org.tw/">Audio Description Development Association in Taiwan</a></p>
+
+
+      <div style="display: flex; flex:1; flex-wrap: wrap; justify-content:center">
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="../images/head2.jpg" alt="Avatar" style="width:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;"> <a href="https://rueichechang.github.io/">Ruei-Che Chang</a></h4>
+          <h4 style="margin: auto;">University of Michigan</h4>
+
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="assets/images/chaohsien.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;">Chao-Hsian Ting</h4>
+          <h4 style="margin: auto;">National Taiwan University</h4>
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="assets/images/chiashen.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;">Chia-Sheng Hung</h4>
+          <h4 style="margin: auto;">National Taiwan University</h4>
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="assets/images/wanchen.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;">Wan-Chen Lee</h4>
+          <h4 style="margin: auto;">National Taiwan University</h4>
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="assets/images/liangjin.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;">Liang-Jin Chen</h4>
+          <h4 style="margin: auto;">National Taiwan University</h4>
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="../images/head2.jpg" alt="Avatar" style="width:100px; border-radius: 50%;">
+          <h4 style="margin: auto;">Yu-Tzu Chao</h4>
+          <h4 style="margin: auto;">Audio Description Development <br> Association in Taiwan</h4>
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center;">
+          <img class="author_heaed" src="assets/images/bingyu.png" alt="Avatar" style="width:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;"><a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/">Bing-Yu Chen</a> </h4>
+          <h4 style="margin: auto;">National Taiwan University</h4>
+        </div>
+
+        <div style="position:relative; padding: 10px; text-align: center; ">
+          <img class="author_heaed" src="assets/images/anhong.jpeg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+          <h4 style="margin: auto;"> <a href="http://guoanhong.com/">Anhong Guo</a></h4>
+          <h4 style="margin: auto;">University of Michigan</h4>
+        </div>
+
+
+
+      </div>
+            
+      <!-- <p id="author_infos"><a href="https://rueichechang.github.io/">Ruei-Che Chang</a><sup>1</sup>, Chao-Hsian Ting<sup>2</sup>, Chia-Sheng Hung<sup>2</sup>, Wan-Chen Lee<sup>2</sup>, <br>Liang-Jin Chen<sup>2</sup>, Yu-Tzu Chao<sup>3</sup>, <a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/">Bing-Yu Chen</a><sup>2</sup>, <a href="http://guoanhong.com/">Anhong Guo</a><sup>1</sup></p> -->
+      <!-- <p id="association"><sup>1</sup><a href="https://cse.engin.umich.edu/">University of Michigan</a>, <sup>2</sup><a href="https://www.csie.ntu.edu.tw/">National Taiwan University</a>, <sup>3</sup><a href="https://www.dvs.org.tw/">Audio Description Development Association in Taiwan</a></p> -->
     
     </div>
 
@@ -35,27 +97,213 @@
   <!-- <hr> -->
   <div id="content">
     <div id="selected" class="cv-section">
-      <h3>Abstract</h3>
+      <h3 style="text-align:center">Paper & Abstract</h3>
       <div class = "line"></div>
-      <p id="abstract">Blind people typically access videos via audio descriptions (AD) crafted by sighted describers who comprehend, select, and describe crucial visual content in the videos. 360° video is an emerging storytelling medium that enables immersive experiences that people may not possibly reach in everyday life. However, the omnidirectional nature of 360° videos makes it challenging for describers to perceive the holistic visual content and interpret spatial information that is essential to create immersive ADs for blind people. Through a formative study with a professional describer, we identified key challenges in describing 360° videos and iteratively designed OmniScribe, a system that supports the authoring of immersive ADs for 360° videos. OmniScribe uses AI-generated content-awareness overlays for describers to better grasp 360° video content. Furthermore, OmniScribe enables describers to author spatial AD and immersive labels for blind users to consume the videos immersively with our mobile prototype. In a study with 11 professional and novice describers, we demonstrated the value of OmniScribe in the authoring workflow; and a study with 8 blind participants revealed the promise of immersive AD over standard AD for 360° videos. Finally, we discuss the implications of promoting 360° video accessibility.</p>
+      <div style="display:flex; justify-content:center">
+        <div style="text-align: center;">
+          <!-- <img src="assets/images/cover.png" alt="" style="border:1px black solid;height:300px; width:auto; margin-left: 30px;"> -->
+          <a href="../pdf/omniscribe.pdf" style="margin-left: 20px;">
+            <img src="assets/images/cover.png" alt="" style="border:1px black solid;height:200px; width:auto; margin-left: 30px;">
+            <br>
+            <span style="margin-left:20px; font-size: 12px;">Click to view/download</span> 
+          </a>
+        </div>
+  
+        <!-- <div class="vl"></div> -->
+  
+        
+        <div>
+          <p id="abstract" style="padding-left: 30px; font-size: 12px;">Blind people typically access videos via audio descriptions (AD) crafted by sighted describers who comprehend, select, and describe crucial visual content in the videos. 360° video is an emerging storytelling medium that enables immersive experiences that people may not possibly reach in everyday life. However, the omnidirectional nature of 360° videos makes it challenging for describers to perceive the holistic visual content and interpret spatial information that is essential to create immersive ADs for blind people. Through a formative study with a professional describer, we identified key challenges in describing 360° videos and iteratively designed OmniScribe, a system that supports the authoring of immersive ADs for 360° videos. OmniScribe uses AI-generated content-awareness overlays for describers to better grasp 360° video content. Furthermore, OmniScribe enables describers to author spatial AD and immersive labels for blind users to consume the videos immersively with our mobile prototype. In a study with 11 professional and novice describers, we demonstrated the value of OmniScribe in the authoring workflow; and a study with 8 blind participants revealed the promise of immersive AD over standard AD for 360° videos. Finally, we discuss the implications of promoting 360° video accessibility.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="selected" class="cv-section" style="text-align: center;">
+      <h3 style="text-align:center">Video Resources</h3>
+      <div class = "line"></div>
+
+        <div>
+          <iframe style= "margin: auto; float: center; width:800px; aspect-ratio: 16/9; "  src="https://www.youtube.com/embed/JL4Zuw7Hr6U" title="OmniScribe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+          <a href="https://www.youtube.com/watch?v=JL4Zuw7Hr6U"><span>[Full Video]</span></a>
+          <a href="https://www.youtube.com/watch?v=Zr8SDollzwE&t=0s"><span>[30s Preivew]</span></a>
+          <a href="#"><span>[Talk]</span></a>
+        </div>
+        <br>
     </div>
 
 
+
+
     <div id="selected" class="cv-section">
-      <h3>Demo: Authoring spatial audio descriptions</h3>
+      <h3 style="text-align:center">Web Authoring Interface</h3>
       <div class = "line"></div>
+
+      <div class="system-section" style="padding-left: 5%; padding-right:5%; display: inline-block;">
+        <img style="width: 100%; height: 100%;" src="assets/images/interface.jpg" alt="This is a figure of an overview of the OmniScribe interface.
+        a. There are two video views. The left half of the overall picture is an augmented equirectangular view with a clock meter (top), and there is another normal field-of-view video view on the bottom. There are three people making formula milk for elephants in the equirectangular view. 
+        b. This is a content map in the lower-left corner of the overall picture of the OmniScribe interface, presenting dynamic objects and the user's viewing angle. Now three people are standing around you; one is at ten o'clock, one is at two o’clock, and the other is at three o’clock.
+        c. There is a description authoring panel in the upper right corner of the overall picture of OmniScribe interface. This panel is for authoring standard AD and scene and object descriptions. There are textboxes; for each textbox, there are widgets, including playing audio descriptions, creating descriptions, and estimating the duration of audio descriptions.
+        d. A timeline panel in the lower right corner of the overall picture helps users visualize the scenes, described objects, audio content, and ADs. This figure describes the detailed functionalities of OmniScribe timeline components. First, four toggles from left to the right for selecting video files, section division, object tracking, and saliency. Second, there are four rows from top to bottom: Timelines for the scene, Background sound, Speech in the original video, and User's description. Third, a region below the four rows mentioned above. The objects made with immersive labels are visualized in this timeline panel.">  
+      </div>      
+
+      <div class="system-section" style="margin-top: 10px; padding-left: 5%; padding-right:5%">
+        <h1>Authoring Immersive Labels</h1>
+
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Authoring Spatial Audio Descriptions (<i>Spatial AD</i>)</b><br>
+            To author spatial ADs, the describer can use the brushing tool to paint the sound paths of the selected description on the equirectangular view. OmniScribe then transforms the 2D painted path into 3D spherical coordinates to be visualized on the video view during future playbacks and for rendering immersive sound in OmniScribe's mobile prototype.
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/author_AD.gif" style="width:100%; height: 100%; margin-top: 0px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+        <br><br>
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Authoring Scene Descriptions</b><br>
+            OmniScribe preempts an AD slot for each scene, allowing the describer to provide more details about them. Scenes are automatically detected and segmented once the video is loaded. BVI users in the mobile prototype can be notified of each new scene through vibration and manually play scene descriptions.
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/author_scene.gif" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+        <br><br><br>
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Authoring Object Descriptions</b><br>
+            OmniScribe enables the describer to select the crucial objects and describe them, which we call object descriptions. The moving path of the object was prepopulated using object tracking in the preprocessing stage. The audio path of the object description is automatically mapped to the moving path of the object. Thus, users do not need to spatialize the object descriptions manually with the above brushing tool.
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/ob_overlay.jpg" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+
+      </div>
+
+
+      <br><br>
+
+      <div class="system-section" style="margin-top: 10px; padding-left: 5%; padding-right:5%">
+        <h1>Content-Awareness Components</h1>
+
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>View Control Widgets</b><br>
+            OmniScribe uses a rectangular view indicator in the equirectangular view to roughly indicate what is presented in NFOV. The view indicator can be panned in either the equirectangular view or NFOV and is synchronized across the two. In NFOV, we also added section control widgets for the six sections: top, bottom, left, right, front and back views, which allow users to focus on the desired section by clicking the section tag or shifting using arrows.          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/view_widgets.gif" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+        <br><br>
+
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Content Map</b><br>
+            OmniScribe visualizes the detected objects into a circular map by centering the viewer and placing the iconic representations around them. Once an icon is clicked, the user will be automatically guided to the clicked object in the other video views. A viewing compass is rendered to indicate the direction of facing and the corresponding field of view.
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/content.gif" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+
+        <br><br><br>
+
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Object Tracking Overlay</b><br>
+            The visualization of bounding boxes for detected objects can serve as another cue for users to observe the visual flow and follow specific content, or infer the number of objects. Therefore, OmniScribe presents the object bounding boxes in another visual overlay. The object bounding boxes also allow users to easily author object descriptions. 
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/object_tracking.gif" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+        <br><br><br>
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Saliency Overlay</b><br>
+            The equirectangular image encodes all 360° information in a 2D format that is hard to observe simultaneously. Therefore, we aimed to increase visual awareness by enhancing the contour of salient objects. OmniScribe outlines salient objects with green strokes.
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/saliency.gif" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+        <br><br><br><br>
+        <div style="width: 60%; display: inline-block;">
+          <span style="font-size: 15px; text-align: left;">
+            <b>Section Division Overlay</b><br>
+            Using our mobile prototype, BVI people can listen to spatial ADs during the video playback. 
+            The smartphone will vibrate to notify users of scene transitions, and users can then proactively access and listen to the scene descriptions by tapping the screen to pause the video. 
+            After the playback of a scene description is finished, users can explore the spatially-anchored object descriptions by turning around.
+          </span>
+        </div>
+        <div style="width: 40%; height: auto;  float: right;" >
+          <img src="assets/images/section.gif" style="width:100%; height: 100%; margin-top: 10px;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>
+
+
+      </div>
     </div>
 
-    <div id="selected" class="cv-section">
-      <h3>Demo: Consuming object descriptions with mobile devices.</h3>
+    <div id="selected" class="cv-section" style="text-align: center;">
+      <h3 style="text-align:center">Mobile Prototype</h3>
       <div class = "line"></div>
+
+      <div style="padding-left: 5%; padding-right:5%">
+        <div style="width: 60%; display: inline-block;">
+          <p style="font-size: 15px; text-align: left;">
+            Using our mobile prototype, BVI people can listen to spatial ADs during the video playback. 
+            The smartphone will vibrate to notify users of scene transitions, and users can then proactively access and listen to the scene descriptions by tapping the screen to pause the video. 
+            After the playback of a scene description is finished, users can explore the spatially-anchored object descriptions by turning around.
+          </p>
+        </div>
+        <div style="width: 40%; height: auto;  float: right; " >
+          <img src="assets/images/mobile.jpg" style="width:100%; height: 100%;" alt="This figure demonstrates the mobile prototype. Using a headphone and a smartphone, BVI users, the woman in this picture, can acquire the object descriptions by orienting themselves to the anchored objects in 3D space. In this figure, the woman will hear the description “A baby elephant is drinking milk from …” when turning her head to the right. If turning her head to the left, she will hear the description “The keeper is feeding the baby elephant.">
+        </div>        
+      </div>
+
+      <div>
+        <iframe style= "margin: auto; float: center; width:800px; aspect-ratio: 16/9; "  src="https://www.youtube.com/embed/MfE6Ur7rYws" title="OmniScribe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <a href="https://www.youtube.com/watch?v=MfE6Ur7rYws"><span>[Full Demo Video]</span></a>
+      </div>
     </div>
 
 
-    <div id="selected" class="cv-section">
-      <h3>Publication and BibTex</h3>
+    <div id="citation" class="cv-section">
+      <h3>FULL CITATION</h3>
       <div class = "line"></div>
-      <b>Paper: </b> <a href="#">#</a>
+
+      <button onclick="handleCopyTextFromParagraph('reference')">Reference <i class="fa fa-copy"></i></button>
+      <p id="reference">Ruei Che Chang, Chao Hsien Ting, Chia Sheng Hung, Wan Chen Lee,Liang Jin Chen, Yu Tzu Chao, Bing Yu Chen, and Anhong Guo. 2022. OmniScribe  Authoring Immersive Audio Descriptions for 360° Videos. In The35th Annual ACM Symposium on User Interface Software and Technology(UIST ’22), October 29 November 2, 2022, Bend, OR, USA. ACM, New York,NY, USA, 14 pages. https //doi.org/10.1145/3526113.3545613</p>
+      <button onclick="handleCopyTextFromParagraph('bibtex')">BibTex <i class="fa fa-copy"></i></button>
+      <p id="bibtex">@inproceedings{10.1145/3472749.3474754,
+          author = {Chang, Ruei-Che and Tsao, Chih-An and Liao, Fang-Ying and Yong, Seraphina and Yeh, Tom and Chen, Bing-Yu},
+          title = {Daedalus in the Dark: Designing for Non-Visual Accessible Construction of Laser-Cut Architecture},
+          year = {2021},
+          isbn = {9781450386357},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3472749.3474754},
+          doi = {10.1145/3472749.3474754},
+          abstract = {Design tools and research regarding laser-cut architectures have been widely explored in the past decade. However, such discussion has mostly revolved around technical and structural design questions instead of another essential element of laser-cut models — assembly — a process that relies heavily on components’ visual affordance, therefore less accessible to blind or low vision (BLV) people. To narrow the gap in this area, we co-designed with 7 BLV people to examine their assembly experience with different laser-cut architectures. From their feedback, we proposed several design heuristics and guidelines for Daedalus, a generative design tool that can produce tactile aids for laser-cut assembly given a few high-level manual inputs. We validate the proposed aids in a user study with 8 new BLV participants. Our results revealed that BLV users can manage laser-cut assembly more efficiently with Daedalus. Going forth from this design iteration, we discuss implications for future research on accessible laser-cut assembly.},
+          booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},
+          pages = {344–358},
+          numpages = {15},
+          keywords = {Assistive Technology, Prototyping, Fabrication, User-centered Design, Accessibility, Laser Cutting, Assembly},
+          location = {Bend, Oregon, USA},
+          series = {UIST '22}
+          }
+      </p>
     </div>
     
   </div>
@@ -63,4 +311,14 @@
 </div>
 
 </body>
+
+<script>
+
+  function handleCopyTextFromParagraph(id) {
+    const cb = navigator.clipboard;
+    const paragraph = document.getElementById(id);
+    cb.writeText(paragraph.innerText).then(() => console.log('Text copied'));
+  }
+  </script>
+
 </html>

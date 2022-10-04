@@ -61,6 +61,10 @@ URL:http://www.chris-creed.com
 	border-top: 0px #987f3b solid;
 }
 
+.author_head{
+	border-radius: 50%;
+}
+
 #intro p{
 	line-height:150%
 }
