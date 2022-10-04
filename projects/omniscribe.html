@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
 <title>OmniScribe: Authoring Immersive Audio Descriptions for 360° Videos</title>
+
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <link type="text/css" rel="stylesheet" href="project_style.css" />
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lora|Martel|Merriweather|PT+Serif&display=swap" rel="stylesheet">
 
@@ -16,12 +22,8 @@
 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=IBM+Plex+Serif&display=swap');
-</style>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=IBM+Plex+Serif&display=swap');
-</style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap');
+  </style>
 
 <body style="background-color: #e4e1df; background-repeat:no-repeat;  background-size: cover;">
 
@@ -29,65 +31,73 @@
   <div id="header">
     <div id="header-content">
       <h1 id="paper_title">OmniScribe: Authoring Immersive Audio Description for 360° Videos</h1>
+      <br>
+      <div class="container" >
+        <div class="row">
+          <div class="col">
+            <div class="authorship">
+              <img class="author_heaed" src="../images/head2.jpg" alt="Avatar" style="width:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;"> <a href="https://rueichechang.github.io/">Ruei-Che Chang</a></span>
+              <br><span style="margin: auto;">University of Michigan</span>
+            </div>
+
+            <div class="authorship">
+              <img class="author_heaed" src="assets/images/liangjin.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;">Liang-Jin Chen</span>
+              <br><span style="margin: auto;">National Taiwan University</span>
+            </div>
+
+          </div>
+
+          <div class="col">
+            <div class="authorship">
+              <img class="author_heaed" src="assets/images/chaohsien.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;">Chao-Hsian Ting</span>
+              <br><span style="margin: auto;">National Taiwan University</span>
+            </div>
+
+            <div class="authorship">
+              <img class="author_heaed" src="../images/head2.jpg" alt="Avatar" style="width:100px; border-radius: 50%;">
+              <br><span style="margin: auto; font-weight: 700;">Yu-Tzu Chao</span>
+              <br><span style="margin: auto;">Taiwan Audio Description Development Association</span>
+            </div>
+
+          </div>
+          <div class="col">
+            <div class="authorship">
+              <img class="author_heaed" src="assets/images/chiashen.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;">Chia-Sheng Hung</span>
+              <br><span style="margin: auto;">National Taiwan University</span>
+            </div>
+
+            <div class="authorship">
+              <img class="author_heaed" src="assets/images/bingyu.png" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;"><a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/">Bing-Yu Chen</a> </span>
+              <br><span style="margin: auto;">National Taiwan University</span>
+            </div>
+          </div>
 
 
-      <div style="display: flex; flex:1; flex-wrap: wrap; justify-content:center">
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="../images/head2.jpg" alt="Avatar" style="width:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;"> <a href="https://rueichechang.github.io/">Ruei-Che Chang</a></h4>
-          <h4 style="margin: auto;">University of Michigan</h4>
+          <div class="col">
+            <div class="authorship">
+              <img class="author_heaed" src="assets/images/wanchen.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;">Wan-Chen Lee</span>
+              <br><span style="margin: auto;">National Taiwan University</span>
+            </div>
 
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="assets/images/chaohsien.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;">Chao-Hsian Ting</h4>
-          <h4 style="margin: auto;">National Taiwan University</h4>
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="assets/images/chiashen.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;">Chia-Sheng Hung</h4>
-          <h4 style="margin: auto;">National Taiwan University</h4>
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="assets/images/wanchen.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;">Wan-Chen Lee</h4>
-          <h4 style="margin: auto;">National Taiwan University</h4>
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="assets/images/liangjin.jpg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;">Liang-Jin Chen</h4>
-          <h4 style="margin: auto;">National Taiwan University</h4>
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="../images/head2.jpg" alt="Avatar" style="width:100px; border-radius: 50%;">
-          <h4 style="margin: auto;">Yu-Tzu Chao</h4>
-          <h4 style="margin: auto;">Audio Description Development <br> Association in Taiwan</h4>
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center;">
-          <img class="author_heaed" src="assets/images/bingyu.png" alt="Avatar" style="width:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;"><a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/">Bing-Yu Chen</a> </h4>
-          <h4 style="margin: auto;">National Taiwan University</h4>
-        </div>
-
-        <div style="position:relative; padding: 10px; text-align: center; ">
-          <img class="author_heaed" src="assets/images/anhong.jpeg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
-          <h4 style="margin: auto;"> <a href="http://guoanhong.com/">Anhong Guo</a></h4>
-          <h4 style="margin: auto;">University of Michigan</h4>
-        </div>
-
-
-
-      </div>
-            
-      <!-- <p id="author_infos"><a href="https://rueichechang.github.io/">Ruei-Che Chang</a><sup>1</sup>, Chao-Hsian Ting<sup>2</sup>, Chia-Sheng Hung<sup>2</sup>, Wan-Chen Lee<sup>2</sup>, <br>Liang-Jin Chen<sup>2</sup>, Yu-Tzu Chao<sup>3</sup>, <a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/">Bing-Yu Chen</a><sup>2</sup>, <a href="http://guoanhong.com/">Anhong Guo</a><sup>1</sup></p> -->
-      <!-- <p id="association"><sup>1</sup><a href="https://cse.engin.umich.edu/">University of Michigan</a>, <sup>2</sup><a href="https://www.csie.ntu.edu.tw/">National Taiwan University</a>, <sup>3</sup><a href="https://www.dvs.org.tw/">Audio Description Development Association in Taiwan</a></p> -->
+            <div class="authorship">
+              <img class="author_heaed" src="assets/images/anhong.jpeg" alt="Avatar" style="width:100px; height:100px; border-radius: 50%; object-fit: cover;">
+              <br><span style="margin: auto; font-weight: 700;"> <a href="http://guoanhong.com/">Anhong Guo</a></span>
+              <br><span style="margin: auto;">University of Michigan</span>
+            </div>
     
+          </div>
+
+
+        </div>
+      </div>
+
+
     </div>
 
   </div>
@@ -99,21 +109,20 @@
     <div id="selected" class="cv-section">
       <h3 style="text-align:center">Paper & Abstract</h3>
       <div class = "line"></div>
+
       <div style="display:flex; justify-content:center">
         <div style="text-align: center;">
           <!-- <img src="assets/images/cover.png" alt="" style="border:1px black solid;height:300px; width:auto; margin-left: 30px;"> -->
-          <a href="../pdf/omniscribe.pdf" style="margin-left: 20px;">
-            <img src="assets/images/cover.png" alt="" style="border:1px black solid;height:200px; width:auto; margin-left: 30px;">
+          <a href="../pdf/omniscribe.pdf" style="margin-left: 1px;">
+            <img src="assets/images/cover.png" alt="" style="border:1px black solid;height:200px; width:auto; margin-left: 0px;">
             <br>
             <span style="margin-left:20px; font-size: 12px;">Click to view/download</span> 
           </a>
         </div>
-  
-        <!-- <div class="vl"></div> -->
-  
+    
         
         <div>
-          <p id="abstract" style="padding-left: 30px; font-size: 12px;">Blind people typically access videos via audio descriptions (AD) crafted by sighted describers who comprehend, select, and describe crucial visual content in the videos. 360° video is an emerging storytelling medium that enables immersive experiences that people may not possibly reach in everyday life. However, the omnidirectional nature of 360° videos makes it challenging for describers to perceive the holistic visual content and interpret spatial information that is essential to create immersive ADs for blind people. Through a formative study with a professional describer, we identified key challenges in describing 360° videos and iteratively designed OmniScribe, a system that supports the authoring of immersive ADs for 360° videos. OmniScribe uses AI-generated content-awareness overlays for describers to better grasp 360° video content. Furthermore, OmniScribe enables describers to author spatial AD and immersive labels for blind users to consume the videos immersively with our mobile prototype. In a study with 11 professional and novice describers, we demonstrated the value of OmniScribe in the authoring workflow; and a study with 8 blind participants revealed the promise of immersive AD over standard AD for 360° videos. Finally, we discuss the implications of promoting 360° video accessibility.
+          <p id="abstract" style="padding-left: 30px; padding-right: 0px; font-size: 14px;">Blind people typically access videos via audio descriptions (AD) crafted by sighted describers who comprehend, select, and describe crucial visual content in the videos. 360° video is an emerging storytelling medium that enables immersive experiences that people may not possibly reach in everyday life. However, the omnidirectional nature of 360° videos makes it challenging for describers to perceive the holistic visual content and interpret spatial information that is essential to create immersive ADs for blind people. Through a formative study with a professional describer, we identified key challenges in describing 360° videos and iteratively designed OmniScribe, a system that supports the authoring of immersive ADs for 360° videos. OmniScribe uses AI-generated content-awareness overlays for describers to better grasp 360° video content. Furthermore, OmniScribe enables describers to author spatial AD and immersive labels for blind users to consume the videos immersively with our mobile prototype. In a study with 11 professional and novice describers, we demonstrated the value of OmniScribe in the authoring workflow; and a study with 8 blind participants revealed the promise of immersive AD over standard AD for 360° videos. Finally, we discuss the implications of promoting 360° video accessibility.
           </p>
         </div>
       </div>
@@ -283,23 +292,21 @@
       <h3>FULL CITATION</h3>
       <div class = "line"></div>
 
-      <button onclick="handleCopyTextFromParagraph('reference')">Reference <i class="fa fa-copy"></i></button>
+      <button class="cite_button" style="font-size:14px" onclick="handleCopyTextFromParagraph('reference')">Reference <i class="fa fa-copy"></i></button>
       <p id="reference">Ruei Che Chang, Chao Hsien Ting, Chia Sheng Hung, Wan Chen Lee,Liang Jin Chen, Yu Tzu Chao, Bing Yu Chen, and Anhong Guo. 2022. OmniScribe  Authoring Immersive Audio Descriptions for 360° Videos. In The35th Annual ACM Symposium on User Interface Software and Technology(UIST ’22), October 29 November 2, 2022, Bend, OR, USA. ACM, New York,NY, USA, 14 pages. https //doi.org/10.1145/3526113.3545613</p>
-      <button onclick="handleCopyTextFromParagraph('bibtex')">BibTex <i class="fa fa-copy"></i></button>
-      <p id="bibtex">@inproceedings{10.1145/3472749.3474754,
-          author = {Chang, Ruei-Che and Tsao, Chih-An and Liao, Fang-Ying and Yong, Seraphina and Yeh, Tom and Chen, Bing-Yu},
+      <button class="cite_button" style="font-size:14px" onclick="handleCopyTextFromParagraph('bibtex')">BibTex <i class="fa fa-copy"></i></button>
+      <br><p id="bibtex">@inproceedings{10.1145/3472749.3474754,
+          author = {Chang, Ruei-Che and Ting, Chao-Hsien and Hung, Chia-Sheng and Lee, Wan-Chen and Chen, Liang-Jin and Chao, Yu-Tzu and Chen, Bing-Yu and Guo Anhong},
           title = {Daedalus in the Dark: Designing for Non-Visual Accessible Construction of Laser-Cut Architecture},
-          year = {2021},
-          isbn = {9781450386357},
+          year = {2022},
+          isbn = {9781450393201},
           publisher = {Association for Computing Machinery},
           address = {New York, NY, USA},
-          url = {https://doi.org/10.1145/3472749.3474754},
-          doi = {10.1145/3472749.3474754},
-          abstract = {Design tools and research regarding laser-cut architectures have been widely explored in the past decade. However, such discussion has mostly revolved around technical and structural design questions instead of another essential element of laser-cut models — assembly — a process that relies heavily on components’ visual affordance, therefore less accessible to blind or low vision (BLV) people. To narrow the gap in this area, we co-designed with 7 BLV people to examine their assembly experience with different laser-cut architectures. From their feedback, we proposed several design heuristics and guidelines for Daedalus, a generative design tool that can produce tactile aids for laser-cut assembly given a few high-level manual inputs. We validate the proposed aids in a user study with 8 new BLV participants. Our results revealed that BLV users can manage laser-cut assembly more efficiently with Daedalus. Going forth from this design iteration, we discuss implications for future research on accessible laser-cut assembly.},
-          booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},
-          pages = {344–358},
-          numpages = {15},
-          keywords = {Assistive Technology, Prototyping, Fabrication, User-centered Design, Accessibility, Laser Cutting, Assembly},
+          url = {https //doi.org/10.1145/3526113.3545613},
+          doi = {10.1145/3526113.3545613},
+          booktitle = {The 35th Annual ACM Symposium on User Interface Software and Technology},
+          numpages = {14},
+          keywords = {360° video, audio description, virtual reality, multimedia, accessibility, Blind, visual impairment, sonifcation, computer vision, mobile},
           location = {Bend, Oregon, USA},
           series = {UIST '22}
           }

@@ -3,13 +3,13 @@
 	font-family: 'IBM Plex Serif', serif;
 }
 ::selection {
-	background: #FFCB05; /* WebKit/Blink Browsers */
+	background: rgb(206, 206, 206); /* WebKit/Blink Browsers */
 	color: black;
-  }
-  ::-moz-selection {
-	background: #FFCB05; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #CFC096; /* WebKit/Blink Browsers */
 	color: black;
-  }
+}
 #wrap{
 	width:1000px;
 	margin:auto;
@@ -28,6 +28,11 @@
 body{
 	/* font-family: 'Alegreya', serif; */
 	line-height:150%;
+}
+
+.authorship{
+	font-size: 14px;
+	text-align: center;
 }
 
 .line{
@@ -67,8 +72,9 @@ body{
 /* -- Content -- */
 /* ------------- */
 #content .cv-section{
-	width:960px;
-	margin:0 0 15px 0;
+	width:900px;
+	margin:0 0px 15px 0; /* top right bot left */
+
 }
 #content .cv-section h3{
 	font-size:28px;
@@ -130,3 +136,16 @@ body{
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEEEEE), color-stop(2%, #FFFFFF));
 
   }
+
+.cite_button{
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	display: inline-block;
+
+}
+
+
+#bibtex, #reference {
+	font-size: 10px;
+}
