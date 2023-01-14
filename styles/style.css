@@ -13,6 +13,13 @@ URL:http://www.chris-creed.com
 /* -------------------- */
 * {
 	font-family: 'Alegreya', serif;
+	/* font-family: 'Open Sans', sans-serif; */
+}
+
+body{
+	font-family: 'Alegreya', serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	line-height:150%;
 }
 ::selection {
 	background: rgb(206, 206, 206); /* WebKit/Blink Browsers */
@@ -73,10 +80,6 @@ URL:http://www.chris-creed.com
 	color: #0000E3;
 	font-weight: normal;
 	font-style: bold;
-}
-body{
-	font-family: 'Alegreya', serif;
-	line-height:150%;
 }
 
 h1{
@@ -311,6 +314,18 @@ a:hover{
 #content .cv-section-item{
 	padding:0 0 15px 0;
 }
+
+
+#content .cv-section .year-div{
+	margin-bottom: 10px;
+}
+
+
+#content .cv-section .year{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
 
 
 #content .cv-section img{
