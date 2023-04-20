@@ -12,12 +12,16 @@ URL:http://www.chris-creed.com
 /* -- General Styles -- */
 /* -------------------- */
 * {
-	font-family: 'Alegreya', serif;
+	/* font-family: 'Anuphan', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Alegreya', serif; */
 	/* font-family: 'Open Sans', sans-serif; */
 }
 
 body{
-	font-family: 'Alegreya', serif;
+	/* font-family: 'Anuphan', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Alegreya', serif; */
 	/* font-family: 'Open Sans', sans-serif; */
 	line-height:150%;
 }
@@ -30,7 +34,7 @@ body{
 	color: black;
   }
 #wrap{
-	width:1000px;
+	width:1100px;
 	margin:70px auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -52,7 +56,7 @@ body{
 
 #top{
 	padding:15px 10px 0px 20px;
-	width:1000px;
+	width:1100px;
 	height: 40px; 
 	margin: auto;
 	background-color: #00274c;
@@ -61,7 +65,7 @@ body{
 
 #bot{
 	padding:10px 10px 0px 20px;
-	width:1000px;
+	width:1100px;
 	height: 40px; 
 	margin: auto;
 	background-color: #00274c;
@@ -150,7 +154,7 @@ a:hover{
 
 #header{
 	float:left;
-	width:1000px;
+	width:1100px;
 	margin:0 0 55px 0;
 }
 
@@ -179,7 +183,7 @@ a:hover{
 
 #header #header-content{
 	float:left;
-	width:1000px;
+	width:1100px;
 	margin-bottom: -70px;
 }
 #header #header-content h1{
@@ -253,7 +257,7 @@ a:hover{
 /* -- Content -- */
 /* ------------- */
 #content .cv-section{
-	width:960px;
+	width:1050px;
 	margin:0 0 15px 0;
 }
 #content .cv-section h3{
