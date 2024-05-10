@@ -113,14 +113,16 @@ p{
 	line-height:22px;
 	margin:0 0 15px 0;
 }
-a{
+/* a{
 	text-decoration:none;
-	color: #9f7f00;
-}
-a:hover{
+	color: #000000;
+} */
+
+
+/* a:hover{
 	color:#000000;
 	background-color: #FFCB05;
-}
+} */
 .line{
 	clear:both;
 	border-bottom:2px #eee solid;
@@ -169,7 +171,8 @@ a:hover{
 }
 
 #header #intro a{
-	color: #9f7f00;
+	color: #FFCB05;
+	/* background-color: #dcdcdc; */
 	text-decoration: underline;
 }
 
@@ -272,18 +275,13 @@ a:hover{
 	margin:0 0 -35px 0;
 	/* font-weight: 700; */
 }
-#content .cv-section h4.conference span.award{
-	/* font-size:12px; */
-	font-style:bold;
-	color:rgb(194, 48, 3);
-	text-decoration: underline;
-}
 
 #content .cv-section h4.conference{
 	/* font-size:12px; */
 	font-style:italic;
 	color:rgb(0, 0, 0);
 	margin-top: -18px;
+	margin-bottom: 1px;
 
 }
 
@@ -424,8 +422,12 @@ a:hover{
 }
 
 #content #selected h4.conference span.award{
-	font-style:bold;
-	color:rgb(255, 60, 0);
+	font-weight:bold;
+	color:white;
+	background-color:rgb(255, 60, 0);
+	padding: 4px;
+	padding-left: 0px;
+	border-radius: 4px;
 	font-size: 14px;
 	text-decoration: underline;
 	/* line-height: 40px; */
@@ -455,8 +457,16 @@ a:hover{
 
 .paper_link{
 	/* background-color: #3B5998; */
-	font-color: black;
+	color: black;
 	/* border-radius: 5px;  */
+    background: rgb(255, 249, 204);
+    padding: 2px;
+    text-align: center;
+	border:rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
 }
 
 .video_link{
@@ -546,4 +556,36 @@ outline: none;
 .white:hover {
 color: white;
 text-shadow: 0px 0px 10px #e4e4e4;
+}
+
+
+.pdf-link {
+    text-decoration: none;  /* Optional: removes underline */
+    color: black;           /* Text color */
+    font-family: Arial, sans-serif; /* Font style for the text */
+    display: inline;
+    align-items: center;
+    gap: 5px;               /* Space between icon and text */
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+    padding-right: 4px;     /* Right padding */
+    border: 1px solid black; /* Border: width, style, and color */
+    border-radius: 4px;     /* Rounded corners */
+    font-size: 12px; 
+	margin-right: 2px;
+}
+
+.pdf-link .fa {
+    color: rgb(255, 204, 0); /* Icon color */
+    font-size: 14px;         /* Icon size */
+    margin-right: -5px;      /* Negative margin to pull text closer to icon */
+}
+
+.pdf-link:hover .fa {
+    color: #ff7b00;          /* Icon color on hover */
+}
+
+.pdf-link:hover {
+    background-color: #efefef; /* Background color on hover */
 }
