@@ -163,6 +163,9 @@
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
+    {% if entry.series %}
+      {% capture entrytype %}{{ entrytype }}<b>{{ " (" }}{{ entry.series }}{{ ") " }}</b>{% endcapture %}
+    {% endif -%}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}
