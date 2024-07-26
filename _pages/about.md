@@ -2,23 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate @ <a href='https://cse.engin.umich.edu/'>Computer Science, University of Michigan</a>
+subtitle: Human-AI Interaction | Accessibility
+
+# Ph.D. Candidate @ <a href='https://cse.engin.umich.edu/'>Computer Science, University of Michigan</a>
 
 profile:
   align: right
   image: head2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <a href= "mailto: rueiche@umich.edu"><i class="fa-solid fa-envelope"></i> <u>rueiche@umich.edu</u> </a><br>
     <a href="https://x.com/RueiChe"><i class="fa-brands fa-twitter"></i> Twitter</a><br>
     <a href="https://scholar.google.com.tw/citations?user=G14TzOEAAAAJ&hl=zh-TW"><i class="fa-brands fa-google-scholar"></i> Google Scholar</a><br>
-    <a href="../assets/pdf/rueichechangcv.pdf"><i class="fa-solid fa-file"></i> Curriculum Vitae</a><br>
+    <a href="../assets/pdf/rueichechangcv.pdf"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</a><br>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. candidate in [Human-AI Lab](https://guoanhong.com/), advised by [Anhong Guo](https://guoanhong.com/).
+I am a Ph.D. candidate at Department of <a href='https://cse.engin.umich.edu/'>Computer Science, University of Michigan</a>, advised by [Anhong Guo](https://guoanhong.com/).
 
 My research focuses on building Human-AI systems that enable blind or visually impaired people to access real world, specifically with audio and captioning interface.
 
