@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /assets/pdf/rueichechangcv.pdf
+permalink: ../assets/pdf/rueichechangcv.pdf
 title: cv
 nav: true
 nav_order: 5
