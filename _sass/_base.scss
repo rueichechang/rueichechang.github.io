@@ -194,6 +194,15 @@ ul.task-list input[type="checkbox"] {
       display: inline-block;
       margin: 0;
     }
+    a {
+      font-size: 16px;
+      margin-top: -20px;
+      margin-bottom: -20px;
+      color: var(--global-theme-color);
+    }
+  }
+  img{
+    margin-top: -80px;
   }
 }
 
@@ -648,6 +657,7 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+  width: 120%;
 
   h1 {
     color: var(--global-theme-color);
@@ -682,6 +692,8 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        width: 110%;
+        margin-left: 0px;
       }
 
       .abbr {
