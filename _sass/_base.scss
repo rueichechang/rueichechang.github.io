@@ -719,7 +719,10 @@ footer.sticky-bottom {
       .title {
         font-weight: bolder;
       }
-
+      .award {
+        font-weight: bolder;
+        color: var(--global-theme-color) !important;
+      }
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
