@@ -23,7 +23,7 @@ social: false # includes social icons at the bottom of the page
 
 I am a Ph.D. candidate at Department of <a href='https://cse.engin.umich.edu/'>Computer Science, University of Michigan</a>, advised by [Anhong Guo](https://guoanhong.com/).
 
-My research focuses on building Human-AI systems that enable blind or visually impaired people to access real world, specifically with audio and captioning interface.
+My research focuses on building Human-AI systems that enable blind or visually impaired people to access the real world, specifically with audio and captioning interfaces.
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
 
