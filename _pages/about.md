@@ -21,7 +21,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a Human Computer Interaction researcher and PhD Candidate supported by the <a href="#"> Apple Scholars in AIML PhD Fellowship</a>, <a href="https://cse.engin.umich.edu/stories/ruei-che-chang-receives-rackham-international-student-fellowship">Rackham International Students Fellowship</a>, and Weinberg Cognitive Science Fellowship.
+I am a Human Computer Interaction researcher and PhD Candidate supported by the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2025"> Apple Scholars in AIML PhD Fellowship</a>, <a href="https://cse.engin.umich.edu/stories/ruei-che-chang-receives-rackham-international-student-fellowship">Rackham International Students Fellowship</a>, and Weinberg Cognitive Science Fellowship.
 
 I am a part of [Human-AI Lab](https://guoanhong.com/) at <a href='https://cse.engin.umich.edu/'>Department of Computer Science, University of Michigan</a>, advised by [Anhong Guo](https://guoanhong.com/).
 
