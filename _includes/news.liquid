@@ -1,22 +1,31 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
+    {% if include.limit and site.announcements.scrollable and news_size > 3 %}
+      {% assign scroll_height = site.announcements.scrollable_max_height | default: '45vh' %}
+      <div class="news-scroll-wrapper" style="max-height: {{ scroll_height }};">
+    {% endif %}
+    <div class="table-responsive">
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
-        {% if include.limit and site.announcements.limit %}
+        {% comment %} When scrollable, show all items so the container can scroll; otherwise respect limit. {% endcomment %}
+        {% if include.limit and site.announcements.scrollable and news_size > 3 %}
+          {% assign news_limit = news_size %}
+        {% elsif include.limit and site.announcements.limit %}
           {% assign news_limit = site.announcements.limit %}
         {% else %}
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{% if item.highlight_date or item.highlight_date_color %}{% assign date_color = item.highlight_date_color | default: "#f92080" %}<span style="color: {{ date_color }}; font-weight: bold;">{{ item.date | date: '%b %d, %Y' }}</span>{% else %}{{ item.date | date: '%b %d, %Y' }}{% endif %}</th>
+            <th scope="row" style="width: 20%">
+              {% if item.highlight_date or item.highlight_date_color -%}
+                {%- assign date_color = item.highlight_date_color | default: '#f92080' -%}
+                <span style="color: {{ date_color }}; font-weight: bold;">{{ item.date | date: '%b %d, %Y' }}</span>
+              {%- else -%}
+                {{- item.date | date: '%b %d, %Y' -}}
+              {%- endif %}
+            </th>
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -28,6 +37,9 @@
         {% endfor %}
       </table>
     </div>
+    {% if include.limit and site.announcements.scrollable and news_size > 3 %}
+      </div>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}

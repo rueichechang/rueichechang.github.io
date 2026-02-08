@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-3 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -26,18 +26,20 @@
         {% endif %}
       {% endif %}
       {% if entry.preview %}
+        {% assign thumb_width = site.publication_thumbnail_max_width | default: '200px' %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" style="max-width: {{ thumb_width }};">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "200px"
+            sizes = thumb_width
             class="preview z-depth-1 rounded"
             zoomable=true
             alt=entry.preview
+            max-width=thumb_width
           %}
         {% endif %}
       {% endif %}
@@ -45,7 +47,14 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  {% assign thumb_gap = site.publication_thumbnail_gap | default: '0.75rem' %}
+  <div
+    id="{{ entry.key }}"
+    class="{% if site.enable_publication_thumbnails %}col-sm-7{% else %}col-sm-10{% endif %}"
+    {% if site.enable_publication_thumbnails %}
+      style="padding-left: {{ thumb_gap }};"
+    {% endif %}
+  >
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->

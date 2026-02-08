@@ -197,7 +197,8 @@ collections:
 
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+  scrollable_max_height: "20vh" # height of news section when scrollable (e.g. "40vh", "50vh", "320px")
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
@@ -371,6 +372,10 @@ more_authors_animation_delay: 20 # more authors are revealed on click using anim
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
+# Maximum width of publication thumbnails (e.g. "150px", "200px", "250px"). Leave blank for theme default.
+publication_thumbnail_max_width: "220px"
+# Gap between thumbnail and publication text (e.g. "0.5rem", "0.75rem", "1rem"). Smaller = closer.
+publication_thumbnail_gap: "0.3rem"
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes

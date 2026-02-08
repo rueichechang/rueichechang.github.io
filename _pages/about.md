@@ -11,10 +11,11 @@ profile:
   image: rueiche.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <a href= "mailto: rueiche@umich.edu"><i class="fa-solid fa-envelope"></i><u>rueiche@umich.edu</u></a><br>
-    <a href="https://x.com/RueiChe"><i class="fa-brands fa-twitter"></i>Twitter</a><br>
-    <a href="https://scholar.google.com.tw/citations?user=G14TzOEAAAAJ&hl=zh-TW"><i class="fa-brands fa-google-scholar"></i>Google Scholar</a><br>
-    <a href="../assets/pdf/rueichechangcv.pdf"><i class="fa-solid fa-file-pdf"></i>Curriculum Vitae</a><br>
+    <a href= "mailto:rueiche@umich.edu"><i class="fa-solid fa-envelope"></i> <u>rueiche@umich.edu</u></a><br>
+    <a href="https://www.linkedin.com/in/ruei-che-chang-65b553166/"><i class="fa-brands fa-linkedin"></i> Linkedin</a><br>
+    <a href="https://x.com/RueiChe"><i class="fa-brands fa-twitter"></i> Twitter</a><br>
+    <a href="https://scholar.google.com.tw/citations?user=G14TzOEAAAAJ&hl=zh-TW"><i class="fa-brands fa-google-scholar"></i> Google Scholar</a><br>
+    <a href="../assets/pdf/rueichechangcv.pdf"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</a><br>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

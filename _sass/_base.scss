@@ -689,8 +689,9 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
-        width: 110%;
-        margin-left: 0px;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
       }
 
       .abbr {
@@ -1148,6 +1149,18 @@ ninja-keys::part(ninja-input) {
 
 ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
+}
+
+// about page: gap between news and selected publications (or next section)
+.about-news-section {
+  margin-bottom: 2.5rem;
+}
+
+// news section scrollable container (about page)
+.news-scroll-wrapper {
+  max-height: 45vh;
+  overflow-y: auto;
+  min-height: 0; // allow shrinking in flex layouts so overflow can scroll
 }
 
 // newsletter
