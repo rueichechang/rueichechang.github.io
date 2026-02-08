@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Excited to share that I will be interning at Apple  in Seattle in 2026!
+Excited to share that I will be interning at Apple  in Seattle this summer!

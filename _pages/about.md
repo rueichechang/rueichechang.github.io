@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Human-AI Interaction | Accessibility
+subtitle: Ph.D. Candidate @ University of Michigan, Ann Arbor
 
 # Ph.D. Candidate @ <a href='https://cse.engin.umich.edu/'>Computer Science, University of Michigan</a>
 
@@ -21,11 +21,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a Human Computer Interaction researcher and PhD Candidate supported by the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2025"> Apple Scholars in AIML PhD Fellowship</a>, <a href="https://cse.engin.umich.edu/stories/ruei-che-chang-receives-rackham-international-student-fellowship">Rackham International Students Fellowship</a>, and Weinberg Cognitive Science Fellowship.
+I am a part of Human-AI Lab at <a href='https://cse.engin.umich.edu/'>UMich CSE</a>, advised by [Anhong Guo](https://guoanhong.com/). My research is supported by the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2025"> Apple Scholars in AIML PhD Fellowship</a>, <a href="https://cse.engin.umich.edu/stories/ruei-che-chang-receives-rackham-international-student-fellowship">Rackham International Students Fellowship</a>, and Weinberg Cognitive Science Fellowship.
 
-I am a part of [Human-AI Lab](https://guoanhong.com/) at <a href='https://cse.engin.umich.edu/'>Department of Computer Science, University of Michigan</a>, advised by [Anhong Guo](https://guoanhong.com/).
-
-My research focuses on developing agents that can understand and describe real-world surroundings for individuals who are blind or visually impaired, with a technical core that is adaptable to broader contexts.
+My research builds interactive AI systems for human-level assistance in real-world tasks. I aim to build an AI companion that can see, hear, and remember past interactions and environments, so it can understand users over time and proactively provide timely, personalized support.
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
 

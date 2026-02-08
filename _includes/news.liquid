@@ -16,7 +16,7 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <th scope="row" style="width: 20%">{% if item.highlight_date or item.highlight_date_color %}{% assign date_color = item.highlight_date_color | default: "#f92080" %}<span style="color: {{ date_color }}; font-weight: bold;">{{ item.date | date: '%b %d, %Y' }}</span>{% else %}{{ item.date | date: '%b %d, %Y' }}{% endif %}</th>
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}

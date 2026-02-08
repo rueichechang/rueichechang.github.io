@@ -5,7 +5,7 @@
 title: blank
 first_name: Ruei-Che
 middle_name:
-last_name: Chang
+last_name: Chang 張睿哲
 email: rueiche@umich.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -14,7 +14,7 @@ keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://rueichechang.github.io # the base hostname & protocol for your site
+url: https://rueiche.com/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -51,7 +51,7 @@ socials_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 800px
+max_width: 810px
 
 # TODO: add layout settings (single page vs. multi-page)
 
