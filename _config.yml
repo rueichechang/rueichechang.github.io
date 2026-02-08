@@ -392,6 +392,7 @@ external_links:
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
+
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
