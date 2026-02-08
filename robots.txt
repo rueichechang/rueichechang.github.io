@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rueichechang.github.io/sitemap.xml
+Sitemap: https://rueiche.com//sitemap.xml
