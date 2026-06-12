@@ -486,8 +486,8 @@ p.news br + br { display: none; }
 .papers-thumbs .paper:first-of-type { border-top: 1px solid var(--line); }
 
 .paper-thumb {
-  width: 130px;
-  min-width: 130px;
+  width: 170px;
+  min-width: 170px;
   height: 90px;
   border-radius: 6px;
   overflow: hidden;
@@ -703,7 +703,7 @@ h3.year-heading {
   .highlight-grid { grid-template-columns: repeat(3, 1fr); }
   .news-awards-layout { flex-direction: column; align-items: stretch; }
   .awards-col { flex: none; width: 100%; }
-  .paper-thumb { width: 100px; min-width: 100px; height: 70px; }
+  .paper-thumb { width: 130px; min-width: 130px; height: 70px; }
 }
 
 @media (max-width: 767px) {
