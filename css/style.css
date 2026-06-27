@@ -99,6 +99,10 @@ body {
   cursor: pointer;
 }
 
+/* Cards without a link yet (e.g. papers awaiting a public URL) shouldn't
+   look clickable. Reverts to a pointer automatically once href is added. */
+.hl-card:not([href]) { cursor: default; }
+
 .hl-card img,
 .hl-card video {
   width: 100%;
@@ -156,6 +160,20 @@ body {
   text-transform: uppercase;
   color: #fff;
   background: var(--blue);
+  border-radius: 4px;
+  padding: 2px 6px;
+  line-height: 1.4;
+}
+
+/* Status pill on a card (e.g. "To Appear" for conditionally accepted papers) */
+.hl-status {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   padding: 2px 6px;
   line-height: 1.4;
@@ -655,6 +673,16 @@ h3.year-heading {
   text-underline-offset: 2px;
 }
 
+/* Non-linked title (e.g. a paper with no public URL yet) — matches the
+   linked title's weight/size so the row reads consistently. */
+.paper-title.is-plain {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 2px;
+}
+
 .authors {
   font-size: 13.5px;
   color: var(--muted);
@@ -695,6 +723,14 @@ h3.year-heading {
   background: none;
   border: none;
   padding: 0;
+}
+
+/* Acceptance status (e.g. "to appear") shown next to the venue name */
+.venue-status {
+  font-size: 12.5px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--muted);
 }
 
 /* Separators no longer needed — buttons are spaced by the flex gap */
