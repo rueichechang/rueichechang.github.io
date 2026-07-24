@@ -692,6 +692,15 @@ h3.year-heading {
 }
 .authors .self { font-weight: 700; color: var(--blue); }
 
+/* Inline "(* Equal contribution)" marker appended to an author list */
+.eq-note {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 /* Venue line: bold venue name on its own line, link buttons on the line below */
 .venue {
   display: flex;
