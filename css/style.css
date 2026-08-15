@@ -786,6 +786,121 @@ h3.year-heading {
 }
 .note a { font-size: 12.5px; }
 
+/* BibTeX chip — matches the .venue link buttons */
+.venue .cite-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 12.5px;
+  color: var(--ink);
+  background: var(--blue-bg);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  padding: 2px 10px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.venue .cite-btn:hover,
+.venue .cite-btn:focus {
+  background: var(--blue);
+  color: #fff;
+  outline: none;
+}
+
+/* ======================= BibTeX modal ======================= */
+.bib-modal[hidden] { display: none; }
+.bib-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+body.bib-modal-open { overflow: hidden; }
+
+.bib-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 43, 51, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.bib-modal-dialog {
+  position: relative;
+  width: min(680px, 100%);
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 18px 48px rgba(28, 43, 51, 0.28);
+  overflow: hidden;
+  animation: bibPop 0.15s ease-out;
+}
+@keyframes bibPop {
+  from { transform: translateY(6px) scale(0.98); opacity: 0; }
+  to   { transform: none; opacity: 1; }
+}
+
+.bib-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.bib-modal-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+}
+.bib-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bib-modal-copy {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 12.5px;
+  color: #fff;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  padding: 4px 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.bib-modal-copy:hover { background: var(--blue-hover); }
+.bib-modal-close {
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--muted);
+  background: none;
+  border: none;
+  padding: 0 4px;
+  cursor: pointer;
+}
+.bib-modal-close:hover { color: var(--ink); }
+
+.bib-modal-body {
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  white-space: pre;
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: #f7f9fb;
+  tab-size: 2;
+}
+
 /* =========================== Contact =========================== */
 
 .contact-email { color: var(--ink); font-weight: 600; }

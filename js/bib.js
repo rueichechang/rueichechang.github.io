@@ -1,0 +1,405 @@
+/* Per-paper BibTeX. Each paper has a variable named after the project — find
+   it by name (e.g. `touchscribe`) and paste the BibTeX between the backticks
+   ` ... ` exactly as copied from ACM (multi-line is fine, no escaping needed).
+
+   The BIBTEX map at the bottom links each variable to the paper identifier
+   (its DOI, or `arxiv:<id>` / `ieee:<id>`) so pubs.js can attach the chip. */
+
+const statescribe = `@misc{chang2026statescribe,
+  doi = {10.48550/ARXIV.2604.23749},
+  url = {https://arxiv.org/abs/2604.23749},
+  author = {Chang, Ruei-Che and Jiang, Xirui and Natalie, Rosiana and Chen, Hao and Roznyatovskiy, Vlad and Zhang, Jianzhong and Shin, Kang G. and Sun, Ke and Guo, Anhong},
+  keywords = {Human-Computer Interaction (cs.HC), FOS: Computer and information sciences},
+  title = {StateScribe: Towards Accessible Change Awareness Across Real-World Revisits},
+  publisher = {arXiv},
+  year = {2026},
+  copyright = {Creative Commons Attribution 4.0 International}
+}`;
+
+const sidekick = `@misc{chang2026sidekick,
+  doi = {10.48550/ARXIV.2607.17527},
+  url = {https://arxiv.org/abs/2607.17527},
+  author = {Chang, Ruei-Che and Xu, Wenqian and Li, Dingzeyu and Wang, Bryan and Guo, Anhong},
+  keywords = {Human-Computer Interaction (cs.HC), FOS: Computer and information sciences},
+  title = {Sidekick: Designing Communication for Effective Multitasking with Computer Use Agents},
+  publisher = {arXiv},
+  year = {2026},
+  copyright = {Creative Commons Attribution 4.0 International}
+}`;
+
+const touchscribe = `@inproceedings{10.1145/3772318.3791308,
+author = {Chang, Ruei-Che and Natalie, Rosiana and Xu, Wenqian and Yap, Jovan Zheng Feng and Luo, Tiange and Potluri, Venkatesh and Guo, Anhong},
+title = {TouchScribe: Augmenting Non-Visual Hand-Object Interactions with Automated Live Visual Descriptions},
+year = {2026},
+isbn = {9798400722783},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3772318.3791308},
+doi = {10.1145/3772318.3791308},
+abstract = {People who are blind or have low vision regularly use their hands to interact with the physical world to gain access to objects’ shape, size, weight, and texture. However, many rich visual features remain inaccessible through touch alone, making it difficult to distinguish similar objects, interpret visual affordances, and form a complete understanding of objects. In this work, we present TouchScribe, a system that augments hand-object interactions with automated live visual descriptions. We trained a custom egocentric hand interaction model to recognize both common gestures (e.g., grab to inspect, hold side-by-side to compare) and unique ones by blind people (e.g., point to explore color, or swipe to read available texts). Furthermore, TouchScribe provides real-time and adaptive feedback based on hand movement, from hand interaction states, to object labels, and to visual details. Our user study and technical evaluations demonstrate that TouchScribe can provide rich and useful descriptions to support object understanding. Finally, we discuss the implications of making live visual descriptions responsive to users’ physical reach.},
+booktitle = {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},
+articleno = {747},
+numpages = {18},
+keywords = {Visual descriptions, blind, visually impaired, assistive technology, accessibility, hand-object interactions, gestures, LLM},
+location = {
+},
+series = {CHI '26}
+}`;
+
+const doctoralSymposium = `@inproceedings{10.1145/3746058.3758468,
+author = {Chang, Ruei-Che},
+title = {Enabling Real-World Assistive Agents: From Live Vision to Proactive Context-Aware Information Delivery},
+year = {2025},
+isbn = {9798400720369},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746058.3758468},
+doi = {10.1145/3746058.3758468},
+abstract = {Interacting with the real world is a fundamental part of daily life, yet it remains challenging for individuals who are blind or visually impaired (BVI). It demands live, contextual understanding of dynamic environments, along with interactive, multimodal communication to fulfill their sensory and cognitive needs. To address this, my dissertation develops assistive AI systems and frameworks that observe the real world through multimodal sensing, reason about essential information in response to user contexts, and deliver human-like verbal communication to support real-world understanding. First, I explored the design insights of assistive AI agents by investigating how BVI users interact with human-like video AI systems across diverse real-world contexts. Second, with the identified insights, such as a lack of proactivity, I developed a mobile application that analyzes live camera feeds to generate real-time visual descriptions aligned with user goals, delivering them in harmony with the audio environment. Lastly, I extend it with a set of human-like capabilities, such as memory, spatial understanding, and the ability to infer intent from natural interactions, to act as a long-term assistive companion. Ultimately, my dissertation advances a paradigm shift from digital agents to real-world assistive agents that enhance the independence and agency of BVI individuals.},
+booktitle = {Adjunct Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {2},
+numpages = {5},
+keywords = {Visual descriptions, blind, visually impaired, assistive technology, accessibility, context-aware, customization, LLM, real world, sound},
+location = {
+},
+series = {UIST Adjunct '25}
+}`;
+
+const chatgptProbing = `@inproceedings{10.1145/3663547.3746319,
+author = {Chang, Ruei-Che and Natalie, Rosiana and Xu, Wenqian and Yap, Jovan Zheng Feng and Guo, Anhong},
+title = {Probing the Gaps in ChatGPT's Live Video Chat for Real-World Assistance for People who are Blind or Visually Impaired},
+year = {2025},
+isbn = {9798400706769},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3663547.3746319},
+doi = {10.1145/3663547.3746319},
+abstract = {Recent advancements in large multimodal models have provided blind or visually impaired (BVI) individuals with new capabilities to interpret and engage with the real world through interactive systems that utilize live video feeds. However, the potential benefits and challenges of such capabilities to support diverse real-world assistive tasks remain unclear. In this paper, we present findings from an exploratory study with eight BVI participants. Participants used ChatGPT’s Advanced Voice with Video, a state-of-the-art live video AI released in late 2024, in various real-world scenarios, from locating objects to recognizing visual landmarks, across unfamiliar indoor and outdoor environments. Our findings indicate that current live video AI effectively provides guidance and answers for static visual scenes but falls short in delivering essential live descriptions required in dynamic situations. Despite inaccuracies in spatial and distance information, participants leveraged the provided visual information to supplement their mobility strategies. Although the system was perceived as human-like due to high-quality voice interactions, assumptions about users’ visual abilities, hallucinations, generic responses, and a tendency towards sycophancy led to confusion, distrust, and potential risks for BVI users. Based on the results, we discuss implications for assistive video AI agents, including incorporating additional sensing capabilities for real-world use, determining appropriate intervention timing beyond turn-taking interactions, and addressing ecological and safety concerns.},
+booktitle = {Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility},
+articleno = {71},
+numpages = {14},
+keywords = {visual descriptions, blind, visually impaired, assistive technology, accessibility, live video, large multimodal models, real world},
+location = {
+},
+series = {ASSETS '25}
+}`;
+
+const viago = `@inproceedings{10.1145/3746059.3747761,
+author = {Chang, Ruei-Che and Grossman, Tovi and Rognon, Carine and Glueck, Michael and Collins, Christopher and Karlson, Amy and Surale, Hemant Bhaskar},
+title = {Viago: Exploring Visual-Audio Modality Transitions for Social Media Consumption on the Go},
+year = {2025},
+isbn = {9798400720376},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746059.3747761},
+doi = {10.1145/3746059.3747761},
+abstract = {As mobile phone use while walking becomes increasingly prevalent, users often divide their visual attention between their surroundings and phone displays, raising concerns around safety and interaction efficiency. Alternative input and output modalities—such as eyes-free touch gestures and audio feedback—offer a promising avenue for reducing visual demands in these contexts. However, the design of seamless transitions between visual and audio modalities for mobile interaction on the go remains underexplored. To fill this gap, we conducted a design probe study with ten participants, simulating screen reader-like experiences across diverse applications to identify five key design insights and three design guidelines. Informed by these insights, we developed Viago, a background service that facilitates fluid transitions between visual and audio modalities for mobile task management while walking. A subsequent evaluation with thirteen participants demonstrated that Viago effectively supports on-the-go interactions by enabling users to interleave modalities as needed. We conclude by discussing the broader implications of visual-audio modality transitions and their potential to enhance mobile interactions in everyday, dynamic environments.},
+booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {20},
+numpages = {20},
+keywords = {task interruption and resumption, mobile computing, interaction on the go, multimodal interaction, audio interface, gesture, microproductivity, accessibility},
+location = {
+},
+series = {UIST '25}
+}`;
+
+const strangeFamiliars = `@ARTICLE{11180930,
+  author={Yen, Yu-Ting and Liao, Fang-Ying and Yang, Chi-Lan and Chang, Ruei-Che and Cherng, Fu-Yin and Chen, Bing-Yu},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={Strange Familiars: Exploring the Design of Avatars and Virtual Environments for Reconnecting Dormant Ties in Virtual Reality}, 
+  year={2025},
+  volume={31},
+  number={12},
+  pages={10777-10788},
+  keywords={Avatars;Virtual environments;Virtual reality;Older adults;Videos;Oral communication;Computer mediated communication;Web conferencing;Training;Telephone sets;Virtual reality;avatar;virtual environment;nostalgia;dormant ties;social VR},
+  doi={10.1109/TVCG.2025.3614445}}
+`;
+
+const worldscribe = `@inproceedings{10.1145/3654777.3676375,
+author = {Chang, Ruei-Che and Liu, Yuxuan and Guo, Anhong},
+title = {WorldScribe: Towards Context-Aware Live Visual Descriptions},
+year = {2024},
+isbn = {9798400706288},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3654777.3676375},
+doi = {10.1145/3654777.3676375},
+abstract = {Automated live visual descriptions can aid blind people in understanding their surroundings with autonomy and independence. However, providing descriptions that are rich, contextual, and just-in-time has been a long-standing challenge in accessibility. In this work, we develop WorldScribe, a system that generates automated live real-world visual descriptions that are customizable and adaptive to users’ contexts: (i) WorldScribe’s descriptions are tailored to users’ intents and prioritized based on semantic relevance. (ii) WorldScribe is adaptive to visual contexts, e.g., providing consecutively succinct descriptions for dynamic scenes, while presenting longer and detailed ones for stable settings. (iii) WorldScribe is adaptive to sound contexts, e.g., increasing volume in noisy environments, or pausing when conversations start. Powered by a suite of vision, language, and sound recognition models, WorldScribe introduces a description generation pipeline that balances the tradeoffs between their richness and latency to support real-time use. The design of WorldScribe is informed by prior work on providing visual descriptions and a formative study with blind participants. Our user study and subsequent pipeline evaluation show that WorldScribe can provide real-time and fairly accurate visual descriptions to facilitate environment understanding that is adaptive and customized to users’ contexts. Finally, we discuss the implications and further steps toward making live visual descriptions more context-aware and humanized.},
+booktitle = {Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {140},
+numpages = {18},
+keywords = {LLM, Visual descriptions, accessibility, assistive technology, blind, context-aware, customization, real world, sound, visually impaired},
+location = {Pittsburgh, PA, USA},
+series = {UIST '24}
+}`;
+
+const editscribe = `@inproceedings{10.1145/3663548.3675599,
+author = {Chang, Ruei-Che and Liu, Yuxuan and Zhang, Lotus and Guo, Anhong},
+title = {EditScribe: Non-Visual Image Editing with Natural Language Verification Loops},
+year = {2024},
+isbn = {9798400706776},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3663548.3675599},
+doi = {10.1145/3663548.3675599},
+abstract = {Image editing is an iterative process that requires precise visual evaluation and manipulation for the output to match the editing intent. However, current image editing tools do not provide accessible interaction nor sufficient feedback for blind and low vision individuals to achieve this level of control. To address this, we developed EditScribe, a prototype system that makes object-level image editing actions accessible using natural language verification loops powered by large multimodal models. Using EditScribe, the user first comprehends the image content through initial general and object descriptions, then specifies edit actions using open-ended natural language prompts. EditScribe performs the image edit, and provides four types of verification feedback for the user to verify the performed edit, including a summary of visual changes, AI judgement, and updated general and object descriptions. The user can ask follow-up questions to clarify and probe into the edits or verification feedback, before performing another edit. In a study with ten blind or low-vision users, we found that EditScribe supported participants to perform and verify image edit actions non-visually. We observed different prompting strategies from participants, and their perceptions on the various types of verification feedback. Finally, we discuss the implications of leveraging natural language verification loops to make visual authoring non-visually accessible.},
+booktitle = {Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility},
+articleno = {65},
+numpages = {19},
+keywords = {Accessibility, assistive technology, blind, creativity support tools, generative AI, image editing, low vision, visual authoring},
+location = {St. John's, NL, Canada},
+series = {ASSETS '24}
+}`;
+
+const audioDescriptionCustomization = `@inproceedings{10.1145/3663548.3675617,
+author = {Natalie, Rosiana and Chang, Ruei-Che and Sheshadri, Smitha and Guo, Anhong and Hara, Kotaro},
+title = {Audio Description Customization},
+year = {2024},
+isbn = {9798400706776},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3663548.3675617},
+doi = {10.1145/3663548.3675617},
+abstract = {Blind and low-vision (BLV) people use audio descriptions (ADs) to access videos. However, current ADs are unalterable by end users, thus are incapable of supporting BLV individuals’ potentially diverse needs and preferences. This research investigates if customizing AD could improve how BLV individuals consume videos. We conducted an interview study (Study 1) with fifteen BLV participants, which revealed desires for customizing properties like length, emphasis, speed, voice, format, tone, and language. At the same time, concerns like interruptions and increased interaction load due to customization emerged. To examine AD customization’s effectiveness and tradeoffs, we designed CustomAD, a prototype that enables BLV users to customize AD content and presentation. An evaluation study (Study 2) with twelve BLV participants showed using CustomAD significantly enhanced BLV people’s video understanding, immersion, and information navigation efficiency. Our work illustrates the importance of AD customization and offers a design that enhances video accessibility for BLV individuals.},
+booktitle = {Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility},
+articleno = {39},
+numpages = {19},
+keywords = {Accessibility, Audio Description, Blind and Low-vision Individual, Customization, Video Accessibility},
+location = {St. John's, NL, Canada},
+series = {ASSETS '24}
+}`;
+
+const soundshift = `@inproceedings{10.1145/3643834.3661556,
+author = {Chang, Ruei-Che and Hung, Chia-Sheng and Chen, Bing-Yu and Jain, Dhruv and Guo, Anhong},
+title = {SoundShift: Exploring Sound Manipulations for Accessible Mixed-Reality Awareness},
+year = {2024},
+isbn = {9798400705830},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643834.3661556},
+doi = {10.1145/3643834.3661556},
+abstract = {Mixed-reality (MR) soundscapes blend real-world sound with virtual audio from hearing devices, presenting intricate auditory information that is hard to discern and differentiate. This is particularly challenging for blind or visually impaired individuals, who rely on sounds and descriptions in their everyday lives. To understand how complex audio information is consumed, we analyzed online forum posts within the blind community, identifying prevailing challenges, needs, and desired solutions. We synthesized the results and propose SoundShift for increasing MR sound awareness, which includes six sound manipulations: Transparency Shift, Envelope Shift, Position Shift, Style Shift, Time Shift, and Sound Append. To evaluate the effectiveness of SoundShift, we conducted a user study with 18 blind participants across three simulated MR scenarios, where participants identified specific sounds within intricate soundscapes. We found that SoundShift increased MR sound awareness and minimized cognitive load. Finally, we developed three real-world example applications to demonstrate the practicality of SoundShift.},
+booktitle = {Proceedings of the 2024 ACM Designing Interactive Systems Conference},
+pages = {116–132},
+numpages = {17},
+keywords = {AR/VR, accessibility, mixed reality, sound awareness},
+location = {Copenhagen, Denmark},
+series = {DIS '24}
+}`;
+
+const imageExplorer = `@inproceedings{10.1145/3677846.3677861,
+author = {Xu, Andi and Cai, Minyu and Hou, Dier and Chang, Ruei-Che and Guo, Anhong},
+title = {ImageExplorer Deployment: Understanding Text-Based and Touch-Based Image Exploration in the Wild},
+year = {2024},
+isbn = {9798400710308},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3677846.3677861},
+doi = {10.1145/3677846.3677861},
+abstract = {Blind and visually-impaired (BVI) users often rely on alt-texts to understand images. AI-generated alt-texts can be scalable and efficient but may lack details and are prone to errors. Multi-layered touch interfaces, on the other hand, can provide rich details and spatial information, but may take longer to explore and cause higher mental load. To understand how BVI users leverage these two methods, we deployed ImageExplorer, an iOS app on the Apple App Store that provides multi-layered image information via both text-based and touch-based interfaces with customizable levels of granularity. Across 12 months, 371 users uploaded 651 images and explored 694 times. Their activities were logged to help us understand how BVI users consume image captions in the wild. This work informs a holistic understanding of BVI users’ image exploration behavior and influential factors. We provide design implications for future models of image captioning and visual access tools.},
+booktitle = {Proceedings of the 21st International Web for All Conference},
+pages = {59–69},
+numpages = {11},
+keywords = {Accessibility, Alt Text, Blind, Deployment, Image Caption, ImageExplorer, Screen Reader, Touch Exploration, Visual Impairment},
+location = {Singapore, Singapore},
+series = {W4A '24}
+}`;
+
+const advCaptcha = `@inproceedings{Lee_2024,
+  series = {USEC 2024},
+  title = {AdvCAPTCHA: Creating Usable and Secure Audio CAPTCHA with Adversarial Machine Learning},
+  url = {http://dx.doi.org/10.14722/usec.2024.23035},
+  DOI = {10.14722/usec.2024.23035},
+  booktitle = {Proceedings 2024 Symposium on Usable Security},
+  publisher = {Internet Society},
+  author = {Lee, Hao-Ping (Hank) and Kao, Wei-Lun and Wang, Hung-Jui and Chang, Ruei-Che and Peng, Yi-Hao and Cherng, Fu-Yin and Chen, Shang-Tse},
+  year = {2024},
+  collection = {USEC 2024}
+}`;
+
+const laserCutStudy = `@inproceedings{10.1145/3544548.3580684,
+author = {Chang, Ruei-Che and Yong, Seraphina and Liao, Fang-Ying and Tsao, Chih-An and Chen, Bing-Yu},
+title = {Understanding (Non-)Visual Needs for the Design of Laser-Cut Models},
+year = {2023},
+isbn = {9781450394215},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3544548.3580684},
+doi = {10.1145/3544548.3580684},
+abstract = {Laser-cutting is a promising fabrication method that empowers makers, including blind or visually-impaired (BVI) creators, to create technologies that fit their needs. Existing work on laser-cut accessibility has facilitated easier assembly as a workaround for existing models. However, laser-cut models are still not designed to accommodate the needs of BVI users. Integrating BVI needs can enrich the greater maker community by enabling cross-group discourse on laser-cut making. To investigate how laser-cut model design can be more accessible overall, we study laser-cut assembly as a process deeply intertwined with the fundamental design of laser-cut models. We present a study with seven sighted and seven BVI participants to compare their usage of laser-cut model affordances during assembly. Data for the BVI participants in this study originate from a previous work [13]. We identify assembly cues common or unique to sighted and BVI users, and discuss implications to improve general accessibility in laser-cut design.},
+booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+articleno = {639},
+numpages = {20},
+keywords = {Accessibility, Assembling, Haptic Exploration, Laser cutting, Laser-cut Model Design, Making, Prototyping},
+location = {Hamburg, Germany},
+series = {CHI '23}
+}`;
+
+const omniscribe = `@inproceedings{10.1145/3526113.3545613,
+author = {Chang, Ruei-Che and Ting, Chao-Hsien and Hung, Chia-Sheng and Lee, Wan-Chen and Chen, Liang-Jin and Chao, Yu-Tzu and Chen, Bing-Yu and Guo, Anhong},
+title = {OmniScribe: Authoring Immersive Audio Descriptions for 360° Videos},
+year = {2022},
+isbn = {9781450393201},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3526113.3545613},
+doi = {10.1145/3526113.3545613},
+abstract = {Blind people typically access videos via audio descriptions (AD) crafted by sighted describers who comprehend, select, and describe crucial visual content in the videos. 360° video is an emerging storytelling medium that enables immersive experiences that people may not possibly reach in everyday life. However, the omnidirectional nature of 360° videos makes it challenging for describers to perceive the holistic visual content and interpret spatial information that is essential to create immersive ADs for blind people. Through a formative study with a professional describer, we identified key challenges in describing 360° videos and iteratively designed OmniScribe, a system that supports the authoring of immersive ADs for 360° videos. OmniScribe uses AI-generated content-awareness overlays for describers to better grasp 360° video content. Furthermore, OmniScribe enables describers to author spatial AD and immersive labels for blind users to consume the videos immersively with our mobile prototype. In a study with 11 professional and novice describers, we demonstrated the value of OmniScribe in the authoring workflow; and a study with 8 blind participants revealed the promise of immersive AD over standard AD for 360° videos. Finally, we discuss the implications of promoting 360° video accessibility.},
+booktitle = {Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {15},
+numpages = {14},
+keywords = {visual impairment, virtual reality, sonification, multimedia, mobile, computer vision, audio description, accessibility, Blind, 360° video},
+location = {Bend, OR, USA},
+series = {UIST '22}
+}`;
+
+const puppeteer = `@inproceedings{10.1145/3562939.3565609,
+author = {Hung, Ching-Wen and Chang, Ruei-Che and Chen, Hong-Sheng and Liang, Chung Han and Chan, Liwei and Chen, Bing-Yu},
+title = {Puppeteer: Exploring Intuitive Hand Gestures and Upper-Body Postures for Manipulating Human Avatar Actions},
+year = {2022},
+isbn = {9781450398893},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3562939.3565609},
+doi = {10.1145/3562939.3565609},
+abstract = {Body-controlled avatars provide a more intuitive method to real-time control virtual avatars but require larger environment space and more user effort. In contrast, hand-controlled avatars give more dexterous and fewer fatigue manipulations within a close-range space for avatar control but provide fewer sensory cues than the body-based method. This paper investigates the differences between the two manipulations and explores the possibility of a combination. We first performed a formative study to understand when and how users prefer manipulating hands and bodies to represent avatars’ actions in current popular video games. Based on the top video games survey, we decided to represent human avatars’ motions. Besides, we found that players used their bodies to represent avatar actions but changed to using hands when they were too unrealistic and exaggerated to mimic by bodies (e.g., flying in the sky, rolling over quickly). Hand gestures also provide an alternative to lower-body motions when players want to sit during gaming and do not want extensive effort to move their avatars. Hence, we focused on the design of hand gestures and upper-body postures. We present Puppeteer, an input prototype system that allows players directly control their avatars through intuitive hand gestures and upper-body postures. We selected 17 avatar actions discovered in the formative study and conducted a gesture elicitation study to invite 12 participants to design best representing hand gestures and upper-body postures for each action. Then we implemented a prototype system using the MediaPipe framework to detect keypoints and a self-trained model to recognize 17 hand gestures and 17 upper-body postures. Finally, three applications demonstrate the interactions enabled by Puppeteer.},
+booktitle = {Proceedings of the 28th ACM Symposium on Virtual Reality Software and Technology},
+articleno = {13},
+numpages = {11},
+keywords = {Body Posture, Camera system, Hand Gesture, Input Techniques, User-Defined Gesture, Video Game},
+location = {Tsukuba, Japan},
+series = {VRST '22}
+}`;
+
+const daedalus = `@inproceedings{10.1145/3472749.3474754,
+author = {Chang, Ruei-Che and Tsao, Chih-An and Liao, Fang-Ying and Yong, Seraphina and Yeh, Tom and Chen, Bing-Yu},
+title = {Daedalus in the Dark: Designing for Non-Visual Accessible Construction of Laser-Cut Architecture},
+year = {2021},
+isbn = {9781450386357},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3472749.3474754},
+doi = {10.1145/3472749.3474754},
+abstract = {Design tools and research regarding laser-cut architectures have been widely explored in the past decade. However, such discussion has mostly revolved around technical and structural design questions instead of another essential element of laser-cut models — assembly — a process that relies heavily on components’ visual affordance, therefore less accessible to blind or low vision (BLV) people. To narrow the gap in this area, we co-designed with 7 BLV people to examine their assembly experience with different laser-cut architectures. From their feedback, we proposed several design heuristics and guidelines for Daedalus, a generative design tool that can produce tactile aids for laser-cut assembly given a few high-level manual inputs. We validate the proposed aids in a user study with 8 new BLV participants. Our results revealed that BLV users can manage laser-cut assembly more efficiently with Daedalus. Going forth from this design iteration, we discuss implications for future research on accessible laser-cut assembly.},
+booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},
+pages = {344–358},
+numpages = {15},
+keywords = {Accessibility, Assembly, Assistive Technology, Fabrication, Laser Cutting, Prototyping, User-centered Design},
+location = {Virtual Event, USA},
+series = {UIST '21}
+}`;
+
+const accessibleCircuits = `@inproceedings{10.1145/3411764.3445690,
+author = {Chang, Ruei-Che and Wang, Wen-Ping and Chiang, Chi-Huan and Wu, Te-Yen and Xu, Zheer and Luo, Justin and Chen, Bing-Yu and Yang, Xing-Dong},
+title = {AccessibleCircuits: Adaptive Add-On Circuit Components for People with Blindness or Low Vision},
+year = {2021},
+isbn = {9781450380966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3411764.3445690},
+doi = {10.1145/3411764.3445690},
+abstract = {In this paper, we propose the designs for low cost and 3D-printable add-on components to adapt existing breadboards, circuit components and electronics tools for blind or low vision (BLV) users. Through an initial user study, we identified several barriers to entry for beginners with BLV in electronics and circuit prototyping. These barriers guided the design and development of our add-on components. We focused on developing adaptations that provide additional information about the specific component pins and breadboard holes, modify tools to make them easier to use for users with BLV, and expand non-visual feedback (e.g., audio, tactile) for tasks that require vision. Through a second user study, we demonstrated that our adaptations can effectively overcome the accessibility barriers in breadboard circuit prototyping for users with BLV.},
+booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+articleno = {670},
+numpages = {14},
+keywords = {Universal Design, Tangible User Interfaces, Education Tools, Circuit Prototyping, Accessibility},
+location = {Yokohama, Japan},
+series = {CHI '21}
+}`;
+
+const glissade = `@inproceedings{10.1145/3313831.3376505,
+author = {Huang, Kai-Chieh and Sun, Chen-Kuo and Huang, Da-Yuan and Chen, Yu-Chun and Chang, Ruei-Che and Hsu, Shuo-wen and Yang, Chih-Yun and Chen, Bing-Yu},
+title = {Glissade: Generating Balance Shifting Feedback to Facilitate Auxiliary Digital Pen Input},
+year = {2020},
+isbn = {9781450367080},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3313831.3376505},
+doi = {10.1145/3313831.3376505},
+abstract = {This paper introduces Glissade, a digital pen that generates balance shifting feedback by changing the weight distribution of the pen. A pulley system shifts a brass mass inside the pen to change the pen's center of mass and moment of inertia. When the mass is stationary, the pen delivers a constant yet natural sensation of weight, which can be used to convey a status. The pen can also generate a variety of haptic clues by actuating the mass according to the tilt or rotation of the pen, two commonly-used auxiliary pen input channels. Glissade demonstrates new possibilities that balance shifting feedback can bring to digital pen interactions. We validated the usability of this feedback by determining the recognizability of six balance patterns – a mix of static and dynamic patterns chosen based on our design considerations – in two controlled experiments. The results show that, on average, the participants could distinguish between the patterns with a 94.25\% accuracy. At the end, we demonstrate a set of novel interactions enabled by Glissade and discuss the directions for future research.},
+booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+pages = {1–13},
+numpages = {13},
+keywords = {balance shifting feedback, digital pen, haptics, sensation of weight},
+location = {Honolulu, HI, USA},
+series = {CHI '20}
+}`;
+
+const smartHomeRoutine = `@inproceedings{10.1145/3313831.3376501,
+author = {Chiang, Yi-Shyuan and Chang, Ruei-Che and Chuang, Yi-Lin and Chou, Shih-Ya and Lee, Hao-Ping and Lin, I-Ju and Jiang Chen, Jian-Hua and Chang, Yung-Ju},
+title = {Exploring the Design Space of User-System Communication for Smart-home Routine Assistants},
+year = {2020},
+isbn = {9781450367080},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3313831.3376501},
+doi = {10.1145/3313831.3376501},
+abstract = {AI-enabled smart-home agents that automate household routines are increasingly viable, but the design space of how and what such systems should communicate with their users remains underexplored. Through a user-enactment study, we identified various interpretations of and feelings toward such a system's confidence in its automated acts. That confidence and their own mental models influenced what and how the participants wanted the system to communicate, as well as how they would assess, diagnose, and subsequently improve it. Automated acts resulted from false predictions were not generally considered improper, provided that they were perceived as reasonable or potentially useful. The participants' improvement strategies were of four general types, all of which will be discussed. Factors affecting their preferred levels of involvement in automated acts and their interest in system confidence were also identified. We conclude by making practical design recommendations for the user-system communication design spaces of smart-home routine assistants.},
+booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+pages = {1–14},
+numpages = {14},
+keywords = {intelligent agent, routine assistant, smart-home, user enactment},
+location = {Honolulu, HI, USA},
+series = {CHI '20}
+}`;
+
+const tango = `@inproceedings{10.1145/3385959.3418457,
+author = {Chang, Ruei-Che and Chiang, Chi-Huan and Hsu, Shuo-wen and Yang, Chih-Yun and Huang, Da-Yuan and Chen, Bing-Yu},
+title = {TanGo: Exploring Expressive Tangible Interactions on Head-Mounted Displays},
+year = {2020},
+isbn = {9781450379434},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3385959.3418457},
+doi = {10.1145/3385959.3418457},
+abstract = {We present TanGo, an always-available input modality on VR headset, which can be complementary to current VR accessories. TanGO is an active mechanical structure symmetrically equipped on Head-Mounted Display, enabling 3-dimensional bimanual sliding input with each degree of freedom furnished a brake system driven by micro servo generating totally 6 passive resistive force profiles. TanGo is an all-in-one structure that possess rich input and output while keeping compactness with the trade-offs between size, weight and usability. Users can actively gesture like pushing, shearing, or squeezing with specific output provided while allowing hands to rest in stationary experiences. TanGo also renders users flexibility to switch seamlessly between virtual and real usage in Augmented Reality without additional efforts and instruments. We demonstrate three applications to show the interaction space of TanGo and then discuss its limitation and show future possibilities based on preliminary user feedback.},
+booktitle = {Proceedings of the 2020 ACM Symposium on Spatial User Interaction},
+articleno = {3},
+numpages = {10},
+keywords = {Virtual/Augmented reality, Touch, Pointing, Mobile devices, Input techniques, Haptic, Gesture},
+location = {Virtual Event, Canada},
+series = {SUI '20}
+}`;
+
+const masque = `@inproceedings{10.1145/3332165.3347898,
+author = {Wang, Chi and Huang, Da-Yuan and Hsu, Shuo-wen and Hou, Chu-En and Chiu, Yeu-Luen and Chang, Ruei-Che and Lo, Jo-Yu and Chen, Bing-Yu},
+title = {Masque: Exploring Lateral Skin Stretch Feedback on the Face with Head-Mounted Displays},
+year = {2019},
+isbn = {9781450368162},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3332165.3347898},
+doi = {10.1145/3332165.3347898},
+abstract = {We propose integrating an array of skin stretch modules with an head-mounted display (HMD) to provide two-dimensional skin stretch feedback on the user's face. Skin stretch has been found effective to induce the perception of force (e.g. weight or inertia) and to enable directional haptic cues. However, its potential as an HMD output for virtual reality (VR) remains to be exploited. Our explorative study firstly investigated the design of shear tactors. Based on our results, Masque has been implemented as an HMD prototype actuating six shear tactors positioned on the HMD's face interface. A comfort study was conducted to ensure that skin stretches generated by Masque are acceptable to all participants. The following two perception-based studies examined the minimum changes in skin stretch distance and stretch angles that are detectable by participants. The results help us to design haptic profiles as well as our prototype applications. Finally, the user evaluation indicates that participants welcomed Masque and regarded skin stretch feedback as a worthwhile addition to HMD output.},
+booktitle = {Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology},
+pages = {439–451},
+numpages = {13},
+keywords = {virtual reality, skin stretch, shear tactor, hmd prototype, haptics},
+location = {New Orleans, LA, USA},
+series = {UIST '19}
+}`;
+
+window.BIBTEX = {
+  "arxiv:2604.23749": statescribe,
+  "arxiv:2607.17527": sidekick,
+  "10.1145/3772318.3791308": touchscribe,
+  "10.1145/3746058.3758468": doctoralSymposium,
+  "10.1145/3663547.3746319": chatgptProbing,
+  "10.1145/3746059.3747761": viago,
+  "ieee:11180930": strangeFamiliars,
+  "10.1145/3654777.3676375": worldscribe,
+  "10.1145/3663548.3675599": editscribe,
+  "10.1145/3663548.3675617": audioDescriptionCustomization,
+  "10.1145/3643834.3661556": soundshift,
+  "10.1145/3677846.3677861": imageExplorer,
+  "10.14722/usec.2024.23035": advCaptcha,
+  "10.1145/3544548.3580684": laserCutStudy,
+  "10.1145/3526113.3545613": omniscribe,
+  "10.1145/3562939.3565609": puppeteer,
+  "10.1145/3472749.3474754": daedalus,
+  "10.1145/3411764.3445690": accessibleCircuits,
+  "10.1145/3313831.3376505": glissade,
+  "10.1145/3313831.3376501": smartHomeRoutine,
+  "10.1145/3385959.3418457": tango,
+  "10.1145/3332165.3347898": masque
+};
