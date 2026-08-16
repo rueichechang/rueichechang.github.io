@@ -104,16 +104,16 @@ series = {UIST '25}
 }`;
 
 const strangeFamiliars = `@ARTICLE{11180930,
-  author={Yen, Yu-Ting and Liao, Fang-Ying and Yang, Chi-Lan and Chang, Ruei-Che and Cherng, Fu-Yin and Chen, Bing-Yu},
-  journal={IEEE Transactions on Visualization and Computer Graphics}, 
-  title={Strange Familiars: Exploring the Design of Avatars and Virtual Environments for Reconnecting Dormant Ties in Virtual Reality}, 
-  year={2025},
-  volume={31},
-  number={12},
-  pages={10777-10788},
-  keywords={Avatars;Virtual environments;Virtual reality;Older adults;Videos;Oral communication;Computer mediated communication;Web conferencing;Training;Telephone sets;Virtual reality;avatar;virtual environment;nostalgia;dormant ties;social VR},
-  doi={10.1109/TVCG.2025.3614445}}
-`;
+author={Yen, Yu-Ting and Liao, Fang-Ying and Yang, Chi-Lan and Chang, Ruei-Che and Cherng, Fu-Yin and Chen, Bing-Yu},
+journal={IEEE Transactions on Visualization and Computer Graphics}, 
+title={Strange Familiars: Exploring the Design of Avatars and Virtual Environments for Reconnecting Dormant Ties in Virtual Reality}, 
+year={2025},
+volume={31},
+number={12},
+pages={10777-10788},
+keywords={Avatars;Virtual environments;Virtual reality;Older adults;Videos;Oral communication;Computer mediated communication;Web conferencing;Training;Telephone sets;Virtual reality;avatar;virtual environment;nostalgia;dormant ties;social VR},
+doi={10.1109/TVCG.2025.3614445}
+}`;
 
 const worldscribe = `@inproceedings{10.1145/3654777.3676375,
 author = {Chang, Ruei-Che and Liu, Yuxuan and Guo, Anhong},
